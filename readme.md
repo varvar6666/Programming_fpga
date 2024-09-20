@@ -18,10 +18,12 @@
 ##### Запуск симуляции
 После установки ПО и всех дополнений, запустите VSCode и в нем откройте папку (Open Folder) **test**. Откройте файл **m_not_tb.v**. 
 Внешний вид окна (картинки кликабельны):
-[![](pics/image_windows.png){ width=200px }](pics/image_windows.png)
+
+<img src="pics/image_windows.png" alt="image" width="500" height="auto">
 
 Нажмите кнопку запуска (*Compile and run testbench*) выбранного файла (расположена в верхнем правом углу):
-[![](pics/image_run.png){ width=200px }](pics/image_run.png)
+
+<img src="pics/image_run.png" alt="image" width="500" height="auto">
 
 Должно будет появится поле *Output* со следующим результатом:
 ```shell
@@ -44,12 +46,15 @@ Execution finished with exit code 0
 
 ##### Просмотр сигналов
 После запуска симуляции можно запустить программу GTk-wave для просмотра сигналов. Для этого нажмите кнопку *GTK-wave* внизу экрана.
-[![](pics/image_gtk_button.png){ width=200px }](pics/image_gtk_button.png)
+
+<img src="pics/image_gtk_button.png" alt="image" width="500" height="auto">
 
 Запустится окно программы
-[![](pics/image_gtk_wave.png){ width=200px }](pics/image_gtk_wave.png)
+
+<img src="pics/image_gtk_wave.png" alt="image" width="500" height="auto">
 
 В области *SST* отображены все модули и подмодули. Чтобы добавить сигнал для просмотра необходимо выбрать модуль и в поле ниже выбрать интересующий сигнал. Двойным щелчком можно добавить сигнал. После выбору интересующих сигналов, для изменения маштаба можно воспользоваться кнопками в меню *Time->Zoom*, например отобразить всю временную область - *Time->Zoom->Zoom Best Full*. 
 
 Окно с сигналами будет выглядеть следующим образом
-[![](pics/image_gtk_sig.png){ width=200px }](pics/image_gtk_sig.png)
+
+<img src="pics/image_gtk_sig.png" alt="image" width="500" height="auto">
