@@ -1,0 +1,1764 @@
+<!DOCTYPE html>
+<html lang="en" class=" esbmaog idc0_350"><script type="text/javascript" async="" src="Tang%20Primer%2020K%20Dock%20Blink%20Led%20-%20Sipeed%20Wiki_files/analytics.js"></script><script type="text/javascript" async="" src="Tang%20Primer%2020K%20Dock%20Blink%20Led%20-%20Sipeed%20Wiki_files/js_002"></script><script src="Tang%20Primer%2020K%20Dock%20Blink%20Led%20-%20Sipeed%20Wiki_files/hm.js"></script><script src="Tang%20Primer%2020K%20Dock%20Blink%20Led%20-%20Sipeed%20Wiki_files/fido2-page-script.js"></script><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="keywords" content="Primer, Tang, Dock， start，20K">
+    
+    
+    <meta name="description" content="Tang Primer 20K Dock start">
+    
+    <meta name="generator" content="teedoc">
+    <meta name="theme" content="teedoc-plugin-theme-default">
+    
+        
+        <meta name="markdown-generator" content="teedoc-plugin-markdown-parser">
+        
+        <script>
+MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"], ["\\(", "\\)"]]}, "svg": {"fontCache": "global"}};
+</script>
+        
+        <script id="MathJax-script" async="" src="Tang%20Primer%2020K%20Dock%20Blink%20Led%20-%20Sipeed%20Wiki_files/tex-mml-chtml.js"></script>
+        
+        <meta name="html-generator" content="teedoc-plugin-jupyter-notebook-parser">
+        
+        <meta name="blog-generator" content="teedoc-plugin-blog">
+        
+        <script src="Tang%20Primer%2020K%20Dock%20Blink%20Led%20-%20Sipeed%20Wiki_files/pre_main.js"></script>
+        
+        <link rel="stylesheet" href="Tang%20Primer%2020K%20Dock%20Blink%20Led%20-%20Sipeed%20Wiki_files/viewer.min.css" type="text/css">
+        
+        <link rel="stylesheet" href="Tang%20Primer%2020K%20Dock%20Blink%20Led%20-%20Sipeed%20Wiki_files/prism.css" type="text/css">
+        
+        <link rel="stylesheet" href="Tang%20Primer%2020K%20Dock%20Blink%20Led%20-%20Sipeed%20Wiki_files/dark.css" type="text/css">
+        
+        <link rel="stylesheet" href="Tang%20Primer%2020K%20Dock%20Blink%20Led%20-%20Sipeed%20Wiki_files/light.css" type="text/css">
+        
+        <script src="Tang%20Primer%2020K%20Dock%20Blink%20Led%20-%20Sipeed%20Wiki_files/jquery.min.js"></script>
+        
+        <script src="Tang%20Primer%2020K%20Dock%20Blink%20Led%20-%20Sipeed%20Wiki_files/split.js"></script>
+        
+        <link rel="stylesheet" href="Tang%20Primer%2020K%20Dock%20Blink%20Led%20-%20Sipeed%20Wiki_files/style_002.css" type="text/css">
+        
+        <script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?9cb07365544a53067c56c346c838181a";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+        
+            <script async="" src="Tang%20Primer%2020K%20Dock%20Blink%20Led%20-%20Sipeed%20Wiki_files/js"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+  
+      gtag('config', 'UA-119047820-5');
+    </script>
+        
+        <link rel="stylesheet" href="Tang%20Primer%2020K%20Dock%20Blink%20Led%20-%20Sipeed%20Wiki_files/gitalk.css" type="text/css">
+        
+        <link rel="stylesheet" href="Tang%20Primer%2020K%20Dock%20Blink%20Led%20-%20Sipeed%20Wiki_files/custom_gitalk.css" type="text/css">
+        
+        <link rel="stylesheet" href="Tang%20Primer%2020K%20Dock%20Blink%20Led%20-%20Sipeed%20Wiki_files/custom.css" type="text/css">
+        
+        <link rel="stylesheet" href="Tang%20Primer%2020K%20Dock%20Blink%20Led%20-%20Sipeed%20Wiki_files/style_003.css" type="text/css">
+        
+    
+    
+    <title>Tang Primer 20K Dock Blink Led - Sipeed Wiki</title>
+    
+    <script type="text/javascript">js_vars = {"teedoc-plugin-ad-hint": {"type": "hint", "label": "NEW", "content": "New Maix series products <a href='https://wiki.sipeed.com/maixcam'>MaixCAM</a> online now, and new <a href='https://wiki.sipeed.com/maixpy/'>MaixPy</a>,feature richer functionalities, enhanced performance, and user-friendly software, with comprehensive documentation", "show_times": 2, "show_after_s": 432000, "date": "2022-06-01 14:00", "color": "#a0421d", "link_color": "#e53935", "link_bg_color": "#e6ae5c", "bg_color": "#ffcf89", "color_hover": "white", "bg_color_hover": "#f57c00", "close_color": "#eab971"}, "teedoc-plugin-thumbs-up": {"label_up": "Helpful", "label_down": "Not Helpful", "icon": "/static/images/thumbs_up/up.svg", "icon_clicked": "/static/images/thumbs_up/upped.svg", "url": "https://thumbs-up.sipeed.com", "show_up_count": true, "show_down_count": false, "msg_already_voted": "You have already voted", "msg_thanks": "Thanks for your vote", "msg_down_prompt": "Thanks to tell us where we can improve?(At least 10 characters)", "msg_down_prompt_error": "Message should be at least 10 characters and less than 256 characters", "msg_error": "Request server failed!"}}</script>
+    <script type="text/javascript">metadata = {"tags": ["Tang Primer 20K Dock，start"], "date": "2022-12-28", "update": [{"date": "2022-12-28", "version": "v0.1", "author": "wonder", "content": ["Init file"]}], "ts": 1672185600, "author": "", "brief": "", "cover": ""}</script>
+<script src="Tang%20Primer%2020K%20Dock%20Blink%20Led%20-%20Sipeed%20Wiki_files/svg.js" charset="UTF-8"></script><style>/* cyrillic-ext */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v26/JTUSjIg1_i6t8kCHKm459WRhyzbi.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v26/JTUSjIg1_i6t8kCHKm459W1hyzbi.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v26/JTUSjIg1_i6t8kCHKm459WZhyzbi.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v26/JTUSjIg1_i6t8kCHKm459Wdhyzbi.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v26/JTUSjIg1_i6t8kCHKm459Wlhyw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v26/JTUSjIg1_i6t8kCHKm459WRhyzbi.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v26/JTUSjIg1_i6t8kCHKm459W1hyzbi.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v26/JTUSjIg1_i6t8kCHKm459WZhyzbi.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v26/JTUSjIg1_i6t8kCHKm459Wdhyzbi.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v26/JTUSjIg1_i6t8kCHKm459Wlhyw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v26/JTUSjIg1_i6t8kCHKm459WRhyzbi.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v26/JTUSjIg1_i6t8kCHKm459W1hyzbi.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v26/JTUSjIg1_i6t8kCHKm459WZhyzbi.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v26/JTUSjIg1_i6t8kCHKm459Wdhyzbi.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v26/JTUSjIg1_i6t8kCHKm459Wlhyw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/roboto/v32/KFOmCnqEu92Fr1Mu72xKOzY.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/roboto/v32/KFOmCnqEu92Fr1Mu5mxKOzY.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/roboto/v32/KFOmCnqEu92Fr1Mu7mxKOzY.woff2) format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/roboto/v32/KFOmCnqEu92Fr1Mu4WxKOzY.woff2) format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/roboto/v32/KFOmCnqEu92Fr1Mu7WxKOzY.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/roboto/v32/KFOmCnqEu92Fr1Mu7GxKOzY.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/roboto/v32/KFOmCnqEu92Fr1Mu4mxK.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/roboto/v32/KFOlCnqEu92Fr1MmEU9fCRc4EsA.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/roboto/v32/KFOlCnqEu92Fr1MmEU9fABc4EsA.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/roboto/v32/KFOlCnqEu92Fr1MmEU9fCBc4EsA.woff2) format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/roboto/v32/KFOlCnqEu92Fr1MmEU9fBxc4EsA.woff2) format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/roboto/v32/KFOlCnqEu92Fr1MmEU9fCxc4EsA.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/roboto/v32/KFOlCnqEu92Fr1MmEU9fChc4EsA.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/roboto/v32/KFOlCnqEu92Fr1MmEU9fBBc4.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/roboto/v32/KFOlCnqEu92Fr1MmWUlfCRc4EsA.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/roboto/v32/KFOlCnqEu92Fr1MmWUlfABc4EsA.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/roboto/v32/KFOlCnqEu92Fr1MmWUlfCBc4EsA.woff2) format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/roboto/v32/KFOlCnqEu92Fr1MmWUlfBxc4EsA.woff2) format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/roboto/v32/KFOlCnqEu92Fr1MmWUlfCxc4EsA.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/roboto/v32/KFOlCnqEu92Fr1MmWUlfChc4EsA.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/roboto/v32/KFOlCnqEu92Fr1MmWUlfBBc4.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+</style><script src="Tang%20Primer%2020K%20Dock%20Blink%20Led%20-%20Sipeed%20Wiki_files/tex.js" charset="UTF-8"></script><style type="text/css">.CtxtMenu_InfoClose {  top:.2em; right:.2em;}
+.CtxtMenu_InfoContent {  overflow:auto; text-align:left; font-size:80%;  padding:.4em .6em; border:1px inset; margin:1em 0px;  max-height:20em; max-width:30em; background-color:#EEEEEE;  white-space:normal;}
+.CtxtMenu_Info.CtxtMenu_MousePost {outline:none;}
+.CtxtMenu_Info {  position:fixed; left:50%; width:auto; text-align:center;  border:3px outset; padding:1em 2em; background-color:#DDDDDD;  color:black;  cursor:default; font-family:message-box; font-size:120%;  font-style:normal; text-indent:0; text-transform:none;  line-height:normal; letter-spacing:normal; word-spacing:normal;  word-wrap:normal; white-space:nowrap; float:none; z-index:201;  border-radius: 15px;                     /* Opera 10.5 and IE9 */  -webkit-border-radius:15px;               /* Safari and Chrome */  -moz-border-radius:15px;                  /* Firefox */  -khtml-border-radius:15px;                /* Konqueror */  box-shadow:0px 10px 20px #808080;         /* Opera 10.5 and IE9 */  -webkit-box-shadow:0px 10px 20px #808080; /* Safari 3 & Chrome */  -moz-box-shadow:0px 10px 20px #808080;    /* Forefox 3.5 */  -khtml-box-shadow:0px 10px 20px #808080;  /* Konqueror */  filter:progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color="gray", Positive="true"); /* IE */}
+</style><style type="text/css">.CtxtMenu_MenuClose {  position:absolute;  cursor:pointer;  display:inline-block;  border:2px solid #AAA;  border-radius:18px;  -webkit-border-radius: 18px;             /* Safari and Chrome */  -moz-border-radius: 18px;                /* Firefox */  -khtml-border-radius: 18px;              /* Konqueror */  font-family: "Courier New", Courier;  font-size:24px;  color:#F0F0F0}
+.CtxtMenu_MenuClose span {  display:block; background-color:#AAA; border:1.5px solid;  border-radius:18px;  -webkit-border-radius: 18px;             /* Safari and Chrome */  -moz-border-radius: 18px;                /* Firefox */  -khtml-border-radius: 18px;              /* Konqueror */  line-height:0;  padding:8px 0 6px     /* may need to be browser-specific */}
+.CtxtMenu_MenuClose:hover {  color:white!important;  border:2px solid #CCC!important}
+.CtxtMenu_MenuClose:hover span {  background-color:#CCC!important}
+.CtxtMenu_MenuClose:hover:focus {  outline:none}
+</style><style type="text/css">.CtxtMenu_Menu {  position:absolute;  background-color:white;  color:black;  width:auto; padding:5px 0px;  border:1px solid #CCCCCC; margin:0; cursor:default;  font: menu; text-align:left; text-indent:0; text-transform:none;  line-height:normal; letter-spacing:normal; word-spacing:normal;  word-wrap:normal; white-space:nowrap; float:none; z-index:201;  border-radius: 5px;                     /* Opera 10.5 and IE9 */  -webkit-border-radius: 5px;             /* Safari and Chrome */  -moz-border-radius: 5px;                /* Firefox */  -khtml-border-radius: 5px;              /* Konqueror */  box-shadow:0px 10px 20px #808080;         /* Opera 10.5 and IE9 */  -webkit-box-shadow:0px 10px 20px #808080; /* Safari 3 & Chrome */  -moz-box-shadow:0px 10px 20px #808080;    /* Forefox 3.5 */  -khtml-box-shadow:0px 10px 20px #808080;  /* Konqueror */}
+.CtxtMenu_MenuItem {  padding: 1px 2em;  background:transparent;}
+.CtxtMenu_MenuArrow {  position:absolute; right:.5em; padding-top:.25em; color:#666666;  font-family: null; font-size: .75em}
+.CtxtMenu_MenuActive .CtxtMenu_MenuArrow {color:white}
+.CtxtMenu_MenuArrow.CtxtMenu_RTL {left:.5em; right:auto}
+.CtxtMenu_MenuCheck {  position:absolute; left:.7em;  font-family: null}
+.CtxtMenu_MenuCheck.CtxtMenu_RTL { right:.7em; left:auto }
+.CtxtMenu_MenuRadioCheck {  position:absolute; left: .7em;}
+.CtxtMenu_MenuRadioCheck.CtxtMenu_RTL {  right: .7em; left:auto}
+.CtxtMenu_MenuInputBox {  padding-left: 1em; right:.5em; color:#666666;  font-family: null;}
+.CtxtMenu_MenuInputBox.CtxtMenu_RTL {  left: .1em;}
+.CtxtMenu_MenuComboBox {  left:.1em; padding-bottom:.5em;}
+.CtxtMenu_MenuSlider {  left: .1em;}
+.CtxtMenu_SliderValue {  position:absolute; right:.1em; padding-top:.25em; color:#333333;  font-size: .75em}
+.CtxtMenu_SliderBar {  outline: none; background: #d3d3d3}
+.CtxtMenu_MenuLabel {  padding: 1px 2em 3px 1.33em;  font-style:italic}
+.CtxtMenu_MenuRule {  border-top: 1px solid #DDDDDD;  margin: 4px 3px;}
+.CtxtMenu_MenuDisabled {  color:GrayText}
+.CtxtMenu_MenuActive {  background-color: #606872;  color: white;}
+.CtxtMenu_MenuDisabled:focus {  background-color: #E8E8E8}
+.CtxtMenu_MenuLabel:focus {  background-color: #E8E8E8}
+.CtxtMenu_ContextMenu:focus {  outline:none}
+.CtxtMenu_ContextMenu .CtxtMenu_MenuItem:focus {  outline:none}
+.CtxtMenu_SelectionMenu {  position:relative; float:left;  border-bottom: none; -webkit-box-shadow:none; -webkit-border-radius:0px; }
+.CtxtMenu_SelectionItem {  padding-right: 1em;}
+.CtxtMenu_Selection {  right: 40%; width:50%; }
+.CtxtMenu_SelectionBox {  padding: 0em; max-height:20em; max-width: none;  background-color:#FFFFFF;}
+.CtxtMenu_SelectionDivider {  clear: both; border-top: 2px solid #000000;}
+.CtxtMenu_Menu .CtxtMenu_MenuClose {  top:-10px; left:-10px}
+</style><style id="MJX-CHTML-styles">
+mjx-container[jax="CHTML"] {
+  line-height: 0;
+}
+
+mjx-container [space="1"] {
+  margin-left: .111em;
+}
+
+mjx-container [space="2"] {
+  margin-left: .167em;
+}
+
+mjx-container [space="3"] {
+  margin-left: .222em;
+}
+
+mjx-container [space="4"] {
+  margin-left: .278em;
+}
+
+mjx-container [space="5"] {
+  margin-left: .333em;
+}
+
+mjx-container [rspace="1"] {
+  margin-right: .111em;
+}
+
+mjx-container [rspace="2"] {
+  margin-right: .167em;
+}
+
+mjx-container [rspace="3"] {
+  margin-right: .222em;
+}
+
+mjx-container [rspace="4"] {
+  margin-right: .278em;
+}
+
+mjx-container [rspace="5"] {
+  margin-right: .333em;
+}
+
+mjx-container [size="s"] {
+  font-size: 70.7%;
+}
+
+mjx-container [size="ss"] {
+  font-size: 50%;
+}
+
+mjx-container [size="Tn"] {
+  font-size: 60%;
+}
+
+mjx-container [size="sm"] {
+  font-size: 85%;
+}
+
+mjx-container [size="lg"] {
+  font-size: 120%;
+}
+
+mjx-container [size="Lg"] {
+  font-size: 144%;
+}
+
+mjx-container [size="LG"] {
+  font-size: 173%;
+}
+
+mjx-container [size="hg"] {
+  font-size: 207%;
+}
+
+mjx-container [size="HG"] {
+  font-size: 249%;
+}
+
+mjx-container [width="full"] {
+  width: 100%;
+}
+
+mjx-box {
+  display: inline-block;
+}
+
+mjx-block {
+  display: block;
+}
+
+mjx-itable {
+  display: inline-table;
+}
+
+mjx-row {
+  display: table-row;
+}
+
+mjx-row > * {
+  display: table-cell;
+}
+
+mjx-mtext {
+  display: inline-block;
+}
+
+mjx-mstyle {
+  display: inline-block;
+}
+
+mjx-merror {
+  display: inline-block;
+  color: red;
+  background-color: yellow;
+}
+
+mjx-mphantom {
+  visibility: hidden;
+}
+
+_::-webkit-full-page-media, _:future, :root mjx-container {
+  will-change: opacity;
+}
+
+mjx-assistive-mml {
+  position: absolute !important;
+  top: 0px;
+  left: 0px;
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 1px 0px 0px 0px !important;
+  border: 0px !important;
+  display: block !important;
+  width: auto !important;
+  overflow: hidden !important;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+mjx-assistive-mml[display="block"] {
+  width: 100% !important;
+}
+
+mjx-c::before {
+  display: block;
+  width: 0;
+}
+
+.MJX-TEX {
+  font-family: MJXZERO, MJXTEX;
+}
+
+.TEX-B {
+  font-family: MJXZERO, MJXTEX-B;
+}
+
+.TEX-I {
+  font-family: MJXZERO, MJXTEX-I;
+}
+
+.TEX-MI {
+  font-family: MJXZERO, MJXTEX-MI;
+}
+
+.TEX-BI {
+  font-family: MJXZERO, MJXTEX-BI;
+}
+
+.TEX-S1 {
+  font-family: MJXZERO, MJXTEX-S1;
+}
+
+.TEX-S2 {
+  font-family: MJXZERO, MJXTEX-S2;
+}
+
+.TEX-S3 {
+  font-family: MJXZERO, MJXTEX-S3;
+}
+
+.TEX-S4 {
+  font-family: MJXZERO, MJXTEX-S4;
+}
+
+.TEX-A {
+  font-family: MJXZERO, MJXTEX-A;
+}
+
+.TEX-C {
+  font-family: MJXZERO, MJXTEX-C;
+}
+
+.TEX-CB {
+  font-family: MJXZERO, MJXTEX-CB;
+}
+
+.TEX-FR {
+  font-family: MJXZERO, MJXTEX-FR;
+}
+
+.TEX-FRB {
+  font-family: MJXZERO, MJXTEX-FRB;
+}
+
+.TEX-SS {
+  font-family: MJXZERO, MJXTEX-SS;
+}
+
+.TEX-SSB {
+  font-family: MJXZERO, MJXTEX-SSB;
+}
+
+.TEX-SSI {
+  font-family: MJXZERO, MJXTEX-SSI;
+}
+
+.TEX-SC {
+  font-family: MJXZERO, MJXTEX-SC;
+}
+
+.TEX-T {
+  font-family: MJXZERO, MJXTEX-T;
+}
+
+.TEX-V {
+  font-family: MJXZERO, MJXTEX-V;
+}
+
+.TEX-VB {
+  font-family: MJXZERO, MJXTEX-VB;
+}
+
+mjx-stretchy-v mjx-c, mjx-stretchy-h mjx-c {
+  font-family: MJXZERO, MJXTEX-S1, MJXTEX-S4, MJXTEX, MJXTEX-A ! important;
+}
+
+@font-face /* 0 */ {
+  font-family: MJXZERO;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Zero.woff") format("woff");
+}
+
+@font-face /* 1 */ {
+  font-family: MJXTEX;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Main-Regular.woff") format("woff");
+}
+
+@font-face /* 2 */ {
+  font-family: MJXTEX-B;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Main-Bold.woff") format("woff");
+}
+
+@font-face /* 3 */ {
+  font-family: MJXTEX-I;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Math-Italic.woff") format("woff");
+}
+
+@font-face /* 4 */ {
+  font-family: MJXTEX-MI;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Main-Italic.woff") format("woff");
+}
+
+@font-face /* 5 */ {
+  font-family: MJXTEX-BI;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Math-BoldItalic.woff") format("woff");
+}
+
+@font-face /* 6 */ {
+  font-family: MJXTEX-S1;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Size1-Regular.woff") format("woff");
+}
+
+@font-face /* 7 */ {
+  font-family: MJXTEX-S2;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Size2-Regular.woff") format("woff");
+}
+
+@font-face /* 8 */ {
+  font-family: MJXTEX-S3;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Size3-Regular.woff") format("woff");
+}
+
+@font-face /* 9 */ {
+  font-family: MJXTEX-S4;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Size4-Regular.woff") format("woff");
+}
+
+@font-face /* 10 */ {
+  font-family: MJXTEX-A;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_AMS-Regular.woff") format("woff");
+}
+
+@font-face /* 11 */ {
+  font-family: MJXTEX-C;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Calligraphic-Regular.woff") format("woff");
+}
+
+@font-face /* 12 */ {
+  font-family: MJXTEX-CB;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Calligraphic-Bold.woff") format("woff");
+}
+
+@font-face /* 13 */ {
+  font-family: MJXTEX-FR;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Fraktur-Regular.woff") format("woff");
+}
+
+@font-face /* 14 */ {
+  font-family: MJXTEX-FRB;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Fraktur-Bold.woff") format("woff");
+}
+
+@font-face /* 15 */ {
+  font-family: MJXTEX-SS;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_SansSerif-Regular.woff") format("woff");
+}
+
+@font-face /* 16 */ {
+  font-family: MJXTEX-SSB;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_SansSerif-Bold.woff") format("woff");
+}
+
+@font-face /* 17 */ {
+  font-family: MJXTEX-SSI;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_SansSerif-Italic.woff") format("woff");
+}
+
+@font-face /* 18 */ {
+  font-family: MJXTEX-SC;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Script-Regular.woff") format("woff");
+}
+
+@font-face /* 19 */ {
+  font-family: MJXTEX-T;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Typewriter-Regular.woff") format("woff");
+}
+
+@font-face /* 20 */ {
+  font-family: MJXTEX-V;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Vector-Regular.woff") format("woff");
+}
+
+@font-face /* 21 */ {
+  font-family: MJXTEX-VB;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Vector-Bold.woff") format("woff");
+}
+</style></head>
+
+
+<body class="type_doc"><span id="warning-container"><i data-reactroot=""></i></span>
+    
+    <div id="new_feature_content"><div><span class="content">New Maix series products <a href="https://wiki.sipeed.com/maixcam">MaixCAM</a> online now, and new <a href="https://wiki.sipeed.com/maixpy/">MaixPy</a>,feature richer functionalities, enhanced performance, and user-friendly software, with comprehensive documentation</span><span class="close">x</span><div></div></div></div><div id="navbar">
+        <div id="navbar_menu">
+            <a class="site_title" href="https://wiki.sipeed.com/en/">
+                
+                    <img class="site_logo" src="Tang%20Primer%2020K%20Dock%20Blink%20Led%20-%20Sipeed%20Wiki_files/logo.svg" alt="sipeed wiki logo">
+                
+                
+                    <h2>wiki</h2>
+                
+        </a>
+            <a id="navbar_menu_btn"></a>
+        </div>
+        <div id="navbar_items">
+            <div>
+                <ul id="nav_left">
+<li class=""><a href="https://wiki.sipeed.com/en/">Products</a></li>
+<li class="sub_items "><a>Software Docs</a><ul><li class=""><a href="https://wiki.sipeed.com/maixpy/en/">MaixPy</a></li>
+<li class=""><a href="https://wiki.sipeed.com/soft/maixpy/zh/index.html">MaixPy_v1</a></li>
+<li class=""><a href="https://wiki.sipeed.com/soft/Lichee/zh/index.html">Lichee</a></li>
+<li class=""><a href="https://wiki.sipeed.com/ai/en/index.html">AI Guide</a></li>
+</ul>
+</li>
+<li class=""><a target="_blank" href="https://maixhub.com/">MaixHub</a></li>
+<li class=""><a href="https://wiki.sipeed.com/news/">News</a></li>
+<li class=""><a href="https://wiki.sipeed.com/en/faq.html">FAQ</a></li>
+<li id="new_feature_btn" class="sub_items"><a>NEW</a></li></ul>
+
+            </div>
+            <div>
+                <ul id="nav_right">
+<li class=""><a href="https://wiki.sipeed.com/en/store.html"><img src="Tang%20Primer%2020K%20Dock%20Blink%20Led%20-%20Sipeed%20Wiki_files/shop.svg" style="height: 1.5em;vertical-align: middle;"></a></li>
+<li class=""><a target="_blank" href="https://github.com/sipeed"><img src="Tang%20Primer%2020K%20Dock%20Blink%20Led%20-%20Sipeed%20Wiki_files/github.svg" style="height: 1.5em;vertical-align: middle;"></a></li>
+<li class="sub_items "><a><img src="Tang%20Primer%2020K%20Dock%20Blink%20Led%20-%20Sipeed%20Wiki_files/language.svg" style="height: 1.5em;vertical-align: middle;">&nbsp;English</a><ul><li class="active"><a href="https://wiki.sipeed.com/hardware/en/tang/tang-primer-20k/examples/led.html">English</a></li>
+<li class=""><a href="https://wiki.sipeed.com/hardware/zh/tang/tang-primer-20k/examples/led.html">中文</a></li>
+</ul></li>
+</ul>
+
+                <ul class="nav_plugins"><li><a id="google_translate_element"><img class="icon" src="Tang%20Primer%2020K%20Dock%20Blink%20Led%20-%20Sipeed%20Wiki_files/translate.svg">Translate</a></li></ul><ul class="nav_plugins"><li><a id="themes" class="light"></a></li></ul><ul class="nav_plugins"><li><a id="search"><span class="icon"></span><span class="placeholder">Search</span>
+                            <div id="search_hints">
+                                <span id="search_input_hint">Input keyword. Using Space to separate multiple keywords</span>
+                                <span id="search_loading_hint">Loading, please wait</span>
+                                <span id="search_download_err_hint">Fail download, Please retry or check network</span>
+                                <span id="search_other_docs_result_hint">Results form other doc</span>
+                                <span id="search_curr_doc_result_hint">Result form current doc</span>
+                            </div></a></li></ul>
+            </div>
+        </div>
+    </div>
+    
+    <div id="wrapper">
+        <div id="sidebar_wrapper" style="width: calc(19% - 3px);">
+            <div id="sidebar">
+                <div id="sidebar_title">
+                    
+                </div>
+                <ul class="">
+<li class="not_active no_link"><a><span class="label">Maix Zero</span><span class="sub_indicator sub_indicator_collapsed"></span></a><ul class="">
+<li class="not_active no_link"><a><span class="label">Maix M0</span><span class="sub_indicator sub_indicator_collapsed"></span></a><ul class="">
+<li class="not_active with_link"><a href="https://wiki.sipeed.com/hardware/en/maixzero/sense/maix_zero_sense.html"><span class="label">M0sense Board</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="https://wiki.sipeed.com/hardware/en/maixzero/sense/start.html"><span class="label">M0sense Guide</span><span class=""></span></a></li>
+</ul>
+</li>
+<li class="not_active no_link"><a><span class="label">Maix M0P</span><span class="sub_indicator sub_indicator_collapsed"></span></a><ul class="">
+<li class="not_active no_link"><a><span class="label">M0P</span><span class=""></span></a></li>
+<li class="not_active no_link"><a><span class="label">M0P Dock</span><span class=""></span></a></li>
+</ul>
+</li>
+<li class="not_active with_link"><a href="https://wiki.sipeed.com/hardware/en/maixzero/m0s/m0s.html"><span class="label">Maix M0s</span><span class=""></span></a></li>
+</ul>
+</li>
+<li class="not_active no_link"><a><span class="label">Maix-I &amp; Zero</span><span class="sub_indicator sub_indicator_collapsed"></span></a><ul class="">
+<li class="not_active no_link"><a><span class="label">Maix M1</span><span class="sub_indicator sub_indicator_collapsed"></span></a><ul class="">
+<li class="not_active no_link"><a><span class="label">M1 Module</span><span class="sub_indicator"></span></a><ul class="show" style="display: block;">
+<li class="not_active with_link"><a href="https://wiki.sipeed.com/hardware/en/maix/core_module.html"><span class="label">M1/M1w</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="https://wiki.sipeed.com/hardware/en/maix/M1n.html"><span class="label">M1n</span><span class=""></span></a></li>
+</ul>
+</li>
+<li class="not_active no_link"><a><span class="label">M1 Board</span><span class="sub_indicator sub_indicator_collapsed"></span></a><ul class="">
+<li class="not_active with_link"><a href="https://wiki.sipeed.com/hardware/en/maix/maixpy_develop_kit_board/Maix_dock.html"><span class="label">Maix Dock(M1/M1W)</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="https://wiki.sipeed.com/hardware/en/maix/maixpy_develop_kit_board/maix_bit.html"><span class="label">Maix Bit</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="https://wiki.sipeed.com/hardware/en/maix/maixpy_develop_kit_board/maix_duino.html"><span class="label">Maix Duino</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="https://wiki.sipeed.com/hardware/en/maix/maixpy_develop_kit_board/maix_nano.html"><span class="label">Maix Nano</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="https://wiki.sipeed.com/hardware/en/maix/maixpy_develop_kit_board/maix_cube.html"><span class="label">Maix Cube</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="https://wiki.sipeed.com/hardware/en/maix/maixpy_develop_kit_board/maix_Amigo.html"><span class="label">Maix Amigo</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="https://wiki.sipeed.com/hardware/en/no_translate.html?ref=/hardware/zh/maix/maixpy_develop_kit_board/maix_hat.html&amp;from=/hardware/en/maix/maixpy_develop_kit_board/maix_hat.html"><span class="label">Maix HAT</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="https://wiki.sipeed.com/hardware/en/maix/maixpy_develop_kit_board/maix_go.html"><span class="label">Maix Go (Sold out)</span><span class=""></span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="not_active no_link"><a><span class="label">Maix M1s</span><span class="sub_indicator sub_indicator_collapsed"></span></a><ul class="">
+<li class="not_active with_link"><a href="https://wiki.sipeed.com/hardware/en/maix/m1s/m1s_module.html"><span class="label">M1s Module</span><span class=""></span></a></li>
+<li class="not_active no_link"><a><span class="label">M1s Dock</span><span class="sub_indicator sub_indicator_collapsed"></span></a><ul class="">
+<li class="not_active with_link"><a href="https://wiki.sipeed.com/hardware/en/maix/m1s/m1s_dock.html"><span class="label">Introduction</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="https://wiki.sipeed.com/hardware/en/maix/m1s/other/start.html"><span class="label">Basic Usage</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="https://wiki.sipeed.com/hardware/en/maix/m1s/other/others.html"><span class="label">Others (Camera and Shell)</span><span class=""></span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="not_active no_link"><a><span class="label">Maix M1a</span><span class="sub_indicator sub_indicator_collapsed"></span></a><ul class="">
+</ul>
+</li>
+</ul>
+</li>
+<li class="not_active with_link"><a href="https://wiki.sipeed.com/hardware/en/maixII/index.html"><span class="label">Maix-II</span><span class="sub_indicator sub_indicator_collapsed"></span></a><ul class="">
+<li class="not_active with_link"><a href="https://wiki.sipeed.com/hardware/en/maixII/M2/resources.html"><span class="label">MaixII-Dock</span><span class="sub_indicator sub_indicator_collapsed"></span></a><ul class="">
+<li class="not_active with_link"><a href="https://wiki.sipeed.com/hardware/en/maixII/M2/flash.html"><span class="label">Burn image</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="https://wiki.sipeed.com/hardware/en/maixII/M2/usage.html"><span class="label">Basic usage</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="https://wiki.sipeed.com/hardware/en/maixII/M2/other.html"><span class="label">Other notice</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="https://wiki.sipeed.com/soft/maixpy3/zh/tools/0.MaixII-Dock.html"><span class="label">Using MaixPy3</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="https://wiki.sipeed.com/hardware/en/maixII/M2/faq.html"><span class="label">FAQ</span><span class=""></span></a></li>
+</ul>
+</li>
+<li class="not_active with_link"><a href="https://wiki.sipeed.com/hardware/en/maixII/M2S/V833.html"><span class="label">M2S</span><span class="sub_indicator sub_indicator_collapsed"></span></a><ul class="">
+<li class="not_active with_link"><a href="https://wiki.sipeed.com/hardware/en/maixII/M2S/reources.html"><span class="label">Board introduction</span><span class=""></span></a></li>
+</ul>
+</li>
+<li class="not_active with_link"><a href="https://wiki.sipeed.com/hardware/en/maixII/M2A/maixsense.html"><span class="label">MaixSense</span><span class="sub_indicator sub_indicator_collapsed"></span></a><ul class="">
+<li class="not_active with_link"><a href="https://wiki.sipeed.com/hardware/en/maixII/M2A/flash_system.html"><span class="label">Burn image</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="https://wiki.sipeed.com/hardware/en/maixII/M2A/config_system.html"><span class="label">Config system</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="https://wiki.sipeed.com/hardware/en/no_translate.html?ref=/hardware/zh/maixII/M2A/first.html&amp;from=/hardware/en/maixII/M2A/first.html"><span class="label">Test board</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="https://wiki.sipeed.com/hardware/en/no_translate.html?ref=/hardware/zh/maixII/M2A/user.html&amp;from=/hardware/en/maixII/M2A/user.html"><span class="label">Start to use</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="https://wiki.sipeed.com/soft/maixpy3/zh/tools/maixsense.html"><span class="label">Using MaixPy3</span><span class=""></span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="not_active no_link"><a><span class="label">Maix-III</span><span class="sub_indicator sub_indicator_collapsed"></span></a><ul class="">
+<li class="not_active with_link"><a href="https://wiki.sipeed.com/hardware/en/maixIII/ax-pi/axpi.html"><span class="label">Maix-III AXera-Pi</span><span class="sub_indicator sub_indicator_collapsed"></span></a><ul class="">
+<li class="not_active with_link"><a href="https://wiki.sipeed.com/hardware/en/maixIII/ax-pi/flash_system.html"><span class="label">AXera-Pi manual</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="https://wiki.sipeed.com/hardware/en/maixIII/ax-pi/python_api.html"><span class="label">Python programming</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="https://wiki.sipeed.com/hardware/en/maixIII/ax-pi/dev_prepare.html"><span class="label">C/C++ programming</span><span class=""></span></a></li>
+<li class="not_active  with_link"><a href="https://wiki.sipeed.com/ai/en/deploy/ax-pi.html"><span class="label">AI development guide</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="https://wiki.sipeed.com/hardware/en/maixIII/ax-pi/faq_axpi.html"><span class="label">Questions (FAQ)</span><span class=""></span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="not_active no_link"><a><span class="label">MaixCAM</span><span class="sub_indicator sub_indicator_collapsed"></span></a><ul class="">
+<li class="not_active with_link"><a href="https://wiki.sipeed.com/hardware/en/maixcam/index.html"><span class="label">MaixCAM</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="https://wiki.sipeed.com/hardware/en/maixcam/maixcam_pro.html"><span class="label">MaixCAM-Pro</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="https://wiki.sipeed.com/hardware/en/maixcam/assemble.html"><span class="label">MaixCAM Assembly</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="https://wiki.sipeed.com/hardware/en/maixcam/os.html"><span class="label">System Upgrade</span><span class=""></span></a></li>
+<li class="not_active  with_link"><a href="https://wiki.sipeed.com/maixpy/"><span class="label">Develop with MaixPy</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="https://wiki.sipeed.com/hardware/en/maixcam/maixcdk.html"><span class="label">Develop with MaixCDK</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="https://wiki.sipeed.com/hardware/en/maixcam/faq.html"><span class="label">FAQ</span><span class=""></span></a></li>
+</ul>
+</li>
+<li class="not_active no_link"><a><span class="label">LicheePI</span><span class="sub_indicator sub_indicator_collapsed"></span></a><ul class="">
+<li class="not_active no_link"><a><span class="label">LicheePI 4A</span><span class="sub_indicator sub_indicator_collapsed"></span></a><ul class="">
+<li class="not_active with_link"><a href="https://wiki.sipeed.com/hardware/en/lichee/th1520/lm4a.html"><span class="label">Lichee Module 4A</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="https://wiki.sipeed.com/hardware/en/lichee/th1520/lc4a/lc4a.html"><span class="label">Lichee Cluster 4A</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="https://wiki.sipeed.com/hardware/en/lichee/th1520/lbook4a/lbook4a.html"><span class="label">Lichee Console 4A</span><span class="sub_indicator sub_indicator_collapsed"></span></a><ul class="">
+<li class="not_active with_link"><a href="https://wiki.sipeed.com/hardware/en/lichee/th1520/lcon4a/setup_guide.html"><span class="label">setup_guide</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="https://wiki.sipeed.com/hardware/en/lichee/th1520/lcon4a/3_images.html"><span class="label">images</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="https://wiki.sipeed.com/hardware/en/lichee/th1520/lcon4a/4_burn_image.html"><span class="label">burn_image</span><span class=""></span></a></li>
+</ul>
+</li>
+<li class="not_active with_link"><a href="https://wiki.sipeed.com/hardware/en/lichee/th1520/lbook4a/lbook4a.html"><span class="label">Lichee Book 4A</span><span class="sub_indicator sub_indicator_collapsed"></span></a><ul class="">
+<li class="not_active with_link"><a href="https://wiki.sipeed.com/hardware/en/lichee/th1520/lbook4a/4_burn_image.html"><span class="label">burn_image</span><span class=""></span></a></li>
+</ul>
+</li>
+<li class="not_active no_link"><a><span class="label">Lichee PI 4A</span><span class="sub_indicator sub_indicator_collapsed"></span></a><ul class="">
+<li class="not_active with_link"><a href="https://wiki.sipeed.com/hardware/en/lichee/th1520/lpi4a/1_intro.html"><span class="label">Introduction</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="https://wiki.sipeed.com/hardware/en/lichee/th1520/lpi4a/2_unbox.html"><span class="label">Unbox guide</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="https://wiki.sipeed.com/hardware/en/lichee/th1520/lpi4a/3_images.html"><span class="label">Image summary</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="https://wiki.sipeed.com/hardware/en/lichee/th1520/lpi4a/4_burn_image.html"><span class="label">Burn image</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="https://wiki.sipeed.com/hardware/en/lichee/th1520/lpi4a/5_desktop.html"><span class="label">Desktop usage</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="https://wiki.sipeed.com/hardware/en/lichee/th1520/lpi4a/6_peripheral.html"><span class="label">Peripheral</span><span class=""></span></a></li>
+<li class="not_active no_link"><a><span class="label">System building</span><span class="sub_indicator sub_indicator_collapsed"></span></a><ul class="">
+<li class="not_active with_link"><a href="https://wiki.sipeed.com/hardware/en/lichee/th1520/lpi4a/7_develop_revyos.html"><span class="label">revyos</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="https://wiki.sipeed.com/hardware/en/lichee/th1520/lpi4a/7_develop_mainline.html"><span class="label">Linux Mainline (Work in Progress)</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="https://wiki.sipeed.com/hardware/en/lichee/th1520/lpi4a/7_develop_android.html"><span class="label">Android</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="https://wiki.sipeed.com/hardware/en/lichee/th1520/lpi4a/7_develop_thead.html"><span class="label">THead Yocto</span><span class=""></span></a></li>
+<li class="not_active no_link"><a><span class="label">OpenHarmony (Work in Progress)</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="https://wiki.sipeed.com/hardware/en/lichee/th1520/lpi4a/7_develop_openwrt.html"><span class="label">OpenWRT</span><span class=""></span></a></li>
+</ul>
+</li>
+<li class="not_active with_link"><a href="https://wiki.sipeed.com/hardware/en/lichee/th1520/lpi4a/8_application.html"><span class="label">Application</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="https://wiki.sipeed.com/hardware/en/lichee/th1520/lpi4a/9_benchmark.html"><span class="label">Benchmark</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="https://wiki.sipeed.com/hardware/en/lichee/th1520/lpi4a/10_test_report.html"><span class="label">Hardware report</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="https://wiki.sipeed.com/hardware/en/lichee/th1520/lpi4a/12_faq.html"><span class="label">FAQ</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="https://wiki.sipeed.com/hardware/en/lichee/th1520/lpi4a/11_credits.html"><span class="label">Credits</span><span class=""></span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="not_active no_link"><a><span class="label">LicheePI 3A</span><span class="sub_indicator sub_indicator_collapsed"></span></a><ul class="">
+<li class="not_active with_link"><a href="https://wiki.sipeed.com/hardware/en/lichee/K1/lm3a.html"><span class="label">Lichee Module 3A</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="https://wiki.sipeed.com/hardware/en/lichee/K1/lc3a/lc3a.html"><span class="label">Lichee Cluster 3A</span><span class=""></span></a></li>
+<li class="not_active no_link"><a><span class="label">Lichee PI 3A</span><span class="sub_indicator"></span></a><ul class="show" style="display: block;">
+<li class="not_active with_link"><a href="https://wiki.sipeed.com/hardware/en/lichee/K1/lpi3a/1_intro.html"><span class="label">SBC Intro</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="https://wiki.sipeed.com/hardware/en/lichee/K1/lpi3a/2_unbox.html"><span class="label">Unbox experience</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="https://wiki.sipeed.com/hardware/en/lichee/K1/lpi3a/3_burn_image.html"><span class="label">Burn Images</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="https://wiki.sipeed.com/hardware/en/lichee/K1/lpi3a/4_peripheral.html"><span class="label">Peripheral Usage</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="https://wiki.sipeed.com/hardware/en/lichee/K1/lpi3a/5_develop.html"><span class="label">System develop</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="https://wiki.sipeed.com/hardware/en/lichee/K1/lpi3a/6_application.html"><span class="label">Applications</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="https://wiki.sipeed.com/hardware/en/lichee/K1/lpi3a/7_faq.html"><span class="label">FAQs</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="https://wiki.sipeed.com/hardware/en/lichee/K1/lpi3a/8_credits.html"><span class="label">Credits</span><span class=""></span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="not_active no_link"><a><span class="label">Lichee RV</span><span class="sub_indicator"></span></a><ul class="show" style="display: block;">
+<li class="not_active no_link"><a><span class="label">Board Introduction</span><span class="sub_indicator sub_indicator_collapsed"></span></a><ul class="">
+<li class="not_active with_link"><a href="https://wiki.sipeed.com/hardware/en/lichee/RV/RV.html"><span class="label">Lichee RV</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="https://wiki.sipeed.com/hardware/en/lichee/RV/86_panel.html"><span class="label">Lichee RV 86 Panel</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="https://wiki.sipeed.com/hardware/en/lichee/RV/Dock.html"><span class="label">Lichee RV Dock</span><span class=""></span></a></li>
+</ul>
+</li>
+<li class="not_active with_link"><a href="https://wiki.sipeed.com/hardware/en/lichee/RV/flash.html"><span class="label">Burn System</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="https://wiki.sipeed.com/hardware/en/lichee/RV/user.html"><span class="label">Basic usage</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="https://wiki.sipeed.com/hardware/en/lichee/RV/problems.html"><span class="label">Questions&amp;Answers</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="https://wiki.sipeed.com/hardware/en/lichee/RV/ubuntu.html"><span class="label">Ubuntu Image</span><span class=""></span></a></li>
+</ul>
+</li>
+<li class="not_active no_link"><a><span class="label">LicheeRV Nano</span><span class="sub_indicator sub_indicator_collapsed"></span></a><ul class="">
+<li class="not_active with_link"><a href="https://wiki.sipeed.com/hardware/en/lichee/RV_Nano/1_intro.html"><span class="label">Introduction</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="https://wiki.sipeed.com/hardware/en/lichee/RV_Nano/2_unbox.html"><span class="label">Unboxing Experience</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="https://wiki.sipeed.com/hardware/en/lichee/RV_Nano/3_images.html"><span class="label">Image Collection</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="https://wiki.sipeed.com/hardware/en/lichee/RV_Nano/4_burn_image.html"><span class="label">Flashing the Image</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="https://wiki.sipeed.com/hardware/en/lichee/RV_Nano/5_peripheral.html"><span class="label">peripheral</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="https://wiki.sipeed.com/hardware/en/lichee/RV_Nano/6_develop_mainline.html"><span class="label">System Development</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="https://wiki.sipeed.com/hardware/en/lichee/RV_Nano/7_test_report.html"><span class="label">test</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="https://wiki.sipeed.com/hardware/en/lichee/RV_Nano/8_mmf_development_guide.html"><span class="label">MMF Development Guide</span><span class=""></span></a></li>
+</ul>
+</li>
+<li class="not_active with_link"><a href="https://wiki.sipeed.com/hardware/en/lichee/Zero/Zero.html"><span class="label">Lichee Zero</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="https://wiki.sipeed.com/hardware/en/lichee/Nano/Nano.html"><span class="label">Lichee Nano</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="https://wiki.sipeed.com/hardware/en/lichee/ZeroPlus/ZeroPlus.html"><span class="label">Lichee ZeroPlus</span><span class=""></span></a></li>
+</ul>
+</li>
+<li class="not_active no_link"><a><span class="label">Tang FPGA</span><span class="sub_indicator sub_indicator_collapsed"></span></a><ul class="">
+<li class="not_active no_link"><a><span class="label">Tang Nano</span><span class="sub_indicator sub_indicator_collapsed"></span></a><ul class="">
+<li class="not_active with_link"><a href="https://wiki.sipeed.com/hardware/en/tang/Tang-Nano/Nano.html"><span class="label">Tang Nano</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="https://wiki.sipeed.com/hardware/en/tang/Tang-Nano-1K/Nano-1k.html"><span class="label">Tang Nano 1K</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="https://wiki.sipeed.com/hardware/en/tang/Tang-Nano-4K/Nano-4K.html"><span class="label">Tang Nano 4k</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="https://wiki.sipeed.com/hardware/en/tang/Tang-Nano-9K/Nano-9K.html"><span class="label">Tang Nano 9K</span><span class=""></span></a></li>
+<li class="not_active no_link"><a><span class="label">Tang Nano 20K</span><span class="sub_indicator sub_indicator_collapsed"></span></a><ul class="">
+<li class="not_active with_link"><a href="https://wiki.sipeed.com/hardware/en/tang/tang-nano-20k/nano-20k.html"><span class="label">Introduction</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="https://wiki.sipeed.com/hardware/en/tang/tang-nano-20k/example/unbox.html"><span class="label">Unbox</span><span class=""></span></a></li>
+</ul>
+</li>
+<li class="not_active with_link"><a href="https://wiki.sipeed.com/hardware/en/tang/Tang-Nano-Doc/install-the-ide.html"><span class="label">Install IDE</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="https://wiki.sipeed.com/hardware/en/tang/Tang-Nano-Doc/examples.html"><span class="label">Tang Nano examples</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="https://wiki.sipeed.com/hardware/en/tang/Tang-Nano-Doc/questions.html"><span class="label">Questions&amp;Answers</span><span class=""></span></a></li>
+</ul>
+</li>
+<li class="not_active no_link"><a><span class="label">Tang Primer</span><span class="sub_indicator sub_indicator_collapsed"></span></a><ul class="">
+<li class="not_active no_link"><a><span class="label">Tang Primer 20K</span><span class="sub_indicator sub_indicator_collapsed"></span></a><ul class="">
+<li class="not_active with_link"><a href="https://wiki.sipeed.com/hardware/en/tang/tang-primer-20k/primer-20k.html"><span class="label">Introduction</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="https://wiki.sipeed.com/hardware/en/tang/tang-primer-20k/start.html"><span class="label">Notice</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="https://wiki.sipeed.com/hardware/en/tang/Tang-Nano-Doc/install-the-ide.html"><span class="label">Install IDE</span><span class=""></span></a></li>
+<li class="not_active  with_link"><a href="https://github.com/sipeed/TangPrimer-20K-example"><span class="label">Examples(Github)</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="https://wiki.sipeed.com/hardware/en/tang/Tang-Nano-Doc/questions.html"><span class="label">Questions&amp;Answers</span><span class=""></span></a></li>
+</ul>
+</li>
+<li class="not_active no_link"><a><span class="label">Tang Primer 25K</span><span class="sub_indicator sub_indicator_collapsed"></span></a><ul class="">
+<li class="not_active with_link"><a href="https://wiki.sipeed.com/hardware/en/tang/tang-primer-25k/primer-25k.html"><span class="label">Introduction</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="https://wiki.sipeed.com/hardware/en/tang/Tang-Nano-Doc/install-the-ide.html"><span class="label">Install IDE</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="https://wiki.sipeed.com/hardware/en/tang/Tang-Nano-Doc/questions.html"><span class="label">Questions&amp;Answers</span><span class=""></span></a></li>
+</ul>
+</li>
+<li class="not_active no_link"><a><span class="label">Tang Primer 15K</span><span class="sub_indicator sub_indicator_collapsed"></span></a><ul class="">
+<li class="not_active with_link"><a href="https://wiki.sipeed.com/hardware/en/tang/tang-primer-15k/primer-15k.html"><span class="label">Introduction</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="https://wiki.sipeed.com/hardware/en/tang/Tang-Nano-Doc/install-the-ide.html"><span class="label">Install IDE</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="https://wiki.sipeed.com/hardware/en/tang/Tang-Nano-Doc/questions.html"><span class="label">Questions&amp;Answers</span><span class=""></span></a></li>
+</ul>
+</li>
+<li class="not_active with_link"><a href="https://wiki.sipeed.com/hardware/en/tang/Tang-primer/Tang-primer.html"><span class="label">Tang Primer (Sold out)</span><span class="sub_indicator sub_indicator_collapsed"></span></a><ul class="">
+<li class="not_active no_link"><a><span class="label">Install TD</span><span class="sub_indicator sub_indicator_collapsed"></span></a><ul class="">
+<li class="not_active with_link"><a href="https://wiki.sipeed.com/hardware/en/tang/Tang-primer/get_started/install_TD_win.html"><span class="label">In Windows</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="https://wiki.sipeed.com/hardware/en/tang/Tang-primer/get_started/install_linux.html"><span class="label">In Linux</span><span class=""></span></a></li>
+</ul>
+</li>
+<li class="not_active with_link"><a href="https://wiki.sipeed.com/hardware/en/tang/Tang-primer/fpga/led.html"><span class="label">Blink by FPGA</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="https://wiki.sipeed.com/hardware/en/tang/Tang-primer/get_started/E203.html"><span class="label"> Prepare E203 environment</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="https://wiki.sipeed.com/hardware/en/tang/Tang-primer/get_started/fpga_download.html"><span class="label">Burn FPGA</span><span class=""></span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="not_active no_link"><a><span class="label">Tang Mega</span><span class="sub_indicator sub_indicator_collapsed"></span></a><ul class="">
+<li class="not_active no_link"><a><span class="label">Tang Mega 138K Pro</span><span class="sub_indicator sub_indicator_collapsed"></span></a><ul class="">
+<li class="not_active with_link"><a href="https://wiki.sipeed.com/hardware/en/tang/tang-mega-138k/mega-138k-pro.html"><span class="label">Introduction</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="https://wiki.sipeed.com/hardware/en/tang/Tang-Nano-Doc/install-the-ide.html"><span class="label">Install IDE</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="https://wiki.sipeed.com/hardware/en/tang/Tang-Nano-Doc/questions.html"><span class="label">Questions&amp;Answers</span><span class=""></span></a></li>
+</ul>
+</li>
+<li class="not_active no_link"><a><span class="label">Tang Mega 138K</span><span class="sub_indicator sub_indicator_collapsed"></span></a><ul class="">
+<li class="not_active with_link"><a href="https://wiki.sipeed.com/hardware/en/tang/tang-mega-138k/mega-138k.html"><span class="label">Introduction</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="https://wiki.sipeed.com/hardware/en/tang/Tang-Nano-Doc/install-the-ide.html"><span class="label">Install IDE</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="https://wiki.sipeed.com/hardware/en/tang/Tang-Nano-Doc/questions.html"><span class="label">Questions&amp;Answers</span><span class=""></span></a></li>
+</ul>
+</li>
+<li class="not_active no_link"><a><span class="label">Tang Mega 60K</span><span class="sub_indicator sub_indicator_collapsed"></span></a><ul class="">
+<li class="not_active with_link"><a href="https://wiki.sipeed.com/hardware/en/tang/tang-mega-60k/mega-60k.html"><span class="label">Introduction</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="https://wiki.sipeed.com/hardware/en/tang/Tang-Nano-Doc/install-the-ide.html"><span class="label">Install IDE</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="https://wiki.sipeed.com/hardware/en/tang/Tang-Nano-Doc/questions.html"><span class="label">Questions&amp;Answers</span><span class=""></span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="not_active with_link"><a href="https://wiki.sipeed.com/hardware/en/tang/tang-PMOD/FPGA_PMOD.html"><span class="label">Tang PMOD</span><span class=""></span></a></li>
+</ul>
+</li>
+<li class="not_active with_link"><a href="https://wiki.sipeed.com/hardware/en/maixsense/index.html"><span class="label">MaixSense</span><span class="sub_indicator sub_indicator_collapsed"></span></a><ul class="">
+<li class="not_active with_link"><a href="https://wiki.sipeed.com/hardware/en/maixsense/maixsense-a010/maixsense-a010.html"><span class="label">MaixSense-a010</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="https://wiki.sipeed.com/hardware/en/maixsense/maixsense-a075v/maixsense-a075v.html"><span class="label">MaixSense-a075v</span><span class=""></span></a></li>
+</ul>
+</li>
+<li class="not_active no_link"><a><span class="label">SLogic</span><span class="sub_indicator sub_indicator_collapsed"></span></a><ul class="">
+<li class="not_active no_link"><a><span class="label">SLogic Combo 8</span><span class="sub_indicator sub_indicator_collapsed"></span></a><ul class="">
+<li class="not_active with_link"><a href="https://wiki.sipeed.com/hardware/en/logic_analyzer/combo8/index.html"><span class="label">Introduction</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="https://wiki.sipeed.com/hardware/en/logic_analyzer/combo8/basic_operation.html"><span class="label">Basic Operation</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="https://wiki.sipeed.com/hardware/en/logic_analyzer/combo8/use_logic_function.html"><span class="label">Using as Logic Analyzer</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="https://wiki.sipeed.com/hardware/en/logic_analyzer/combo8/use_cklink_function.html"><span class="label">Using as CKLink</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="https://wiki.sipeed.com/hardware/en/logic_analyzer/combo8/use_daplink_function.html"><span class="label">Using as DAPLink</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="https://wiki.sipeed.com/hardware/en/logic_analyzer/combo8/use_fouruart_function.html"><span class="label">Using as Serial Module</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="https://wiki.sipeed.com/hardware/en/logic_analyzer/combo8/update_firmware.html"><span class="label">Update Firmware</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="https://wiki.sipeed.com/hardware/en/logic_analyzer/combo8/faq.html"><span class="label">FAQ</span><span class=""></span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="not_active no_link"><a><span class="label">KVM</span><span class="sub_indicator sub_indicator_collapsed"></span></a><ul class="">
+<li class="not_active no_link"><a><span class="label">NanoKVM Cube</span><span class="sub_indicator sub_indicator_collapsed"></span></a><ul class="">
+<li class="not_active with_link"><a href="https://wiki.sipeed.com/hardware/en/kvm/NanoKVM/introduction.html"><span class="label">Introduction</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="https://wiki.sipeed.com/hardware/en/kvm/NanoKVM/quick_start.html"><span class="label">Quick start</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="https://wiki.sipeed.com/hardware/en/kvm/NanoKVM/user_guide.html"><span class="label">User Guide</span><span class=""></span></a></li>
+<li class="not_active no_link"><a><span class="label">Network</span><span class="sub_indicator sub_indicator_collapsed"></span></a><ul class="">
+<li class="not_active with_link"><a href="https://wiki.sipeed.com/hardware/en/kvm/NanoKVM/network/tailscale.html"><span class="label">Tailscale</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="https://wiki.sipeed.com/hardware/en/kvm/NanoKVM/network/frp.html"><span class="label">frp</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="https://wiki.sipeed.com/hardware/en/kvm/NanoKVM/network/static_ip.html"><span class="label">Static IP</span><span class=""></span></a></li>
+</ul>
+</li>
+<li class="not_active no_link"><a><span class="label">System</span><span class="sub_indicator sub_indicator_collapsed"></span></a><ul class="">
+<li class="not_active with_link"><a href="https://wiki.sipeed.com/hardware/en/kvm/NanoKVM/system/introduction.html"><span class="label">System Introduction</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="https://wiki.sipeed.com/hardware/en/kvm/NanoKVM/system/flashing.html"><span class="label">Flashing</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="https://wiki.sipeed.com/hardware/en/kvm/NanoKVM/system/updating.html"><span class="label">Updating</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="https://wiki.sipeed.com/hardware/en/kvm/NanoKVM/system/configuration.html"><span class="label">Configuration</span><span class=""></span></a></li>
+</ul>
+</li>
+<li class="not_active with_link"><a href="https://wiki.sipeed.com/hardware/en/kvm/NanoKVM/faq.html"><span class="label">FAQ</span><span class=""></span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="not_active no_link"><a><span class="label">Longon</span><span class="sub_indicator sub_indicator_collapsed"></span></a><ul class="">
+<li class="not_active no_link"><a><span class="label">LonganPI 3H</span><span class="sub_indicator sub_indicator_collapsed"></span></a><ul class="">
+<li class="not_active with_link"><a href="https://wiki.sipeed.com/hardware/en/longan/h618/lpi3h/1_intro.html"><span class="label">Introduction</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="https://wiki.sipeed.com/hardware/en/longan/h618/lpi3h/3_images.html"><span class="label">Images</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="https://wiki.sipeed.com/hardware/en/longan/h618/lpi3h/4_burn_image.html"><span class="label">Burn images</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="https://wiki.sipeed.com/hardware/en/longan/h618/lpi3h/5_desktop.html"><span class="label">Desktop Usage</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="https://wiki.sipeed.com/hardware/en/longan/h618/lpi3h/6_peripheral.html"><span class="label">Peripheral</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="https://wiki.sipeed.com/hardware/en/longan/h618/lpi3h/7_develop_mainline.html"><span class="label">Development</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="https://wiki.sipeed.com/hardware/en/longan/h618/lpi3h/8_test_report.html"><span class="label">Test report</span><span class=""></span></a></li>
+</ul>
+</li>
+<li class="not_active with_link"><a href="https://wiki.sipeed.com/hardware/en/longan/Nano/Longan_nano.html"><span class="label">Longon Nano</span><span class="sub_indicator sub_indicator_collapsed"></span></a><ul class="">
+<li class="not_active with_link"><a href="https://wiki.sipeed.com/hardware/en/longan/Nano/pio.html"><span class="label">Setup environment</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="https://wiki.sipeed.com/hardware/en/longan/Nano/blink.html"><span class="label">Blink test</span><span class=""></span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="not_active no_link"><a><span class="label">MaixFace</span><span class="sub_indicator sub_indicator_collapsed"></span></a><ul class="">
+<li class="not_active with_link"><a href="https://wiki.sipeed.com/hardware/en/maixface/mf_ml_module/mf0_ml_module.html"><span class="label">MF0&amp;&amp;MF0 Dock</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="https://wiki.sipeed.com/hardware/en/maixface/mf_ml_module/mf1_ml_module.html"><span class="label">MF1 &amp;&amp; MF2</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="https://wiki.sipeed.com/hardware/en/maixface/mf_ml_module/mf5_product.html"><span class="label">MF4 &amp;&amp; MF5</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="https://wiki.sipeed.com/hardware/en/maixface/mf_ml_module/mf_precautions.html"><span class="label">Maixface PCB Design</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="https://wiki.sipeed.com/hardware/en/maixface/mf_ml_module/mf_update_firmwave.html"><span class="label">Maixface Update firmware</span><span class=""></span></a></li>
+</ul>
+</li>
+<li class="not_active no_link"><a><span class="label">Peripheral modules</span><span class="sub_indicator sub_indicator_collapsed"></span></a><ul class="">
+<li class="not_active no_link"><a><span class="label">SP-MOD Peripheral modules</span><span class="sub_indicator sub_indicator_collapsed"></span></a><ul class="">
+<li class="not_active no_link"><a><span class="label">Adapter board</span><span class="sub_indicator sub_indicator_collapsed"></span></a><ul class="">
+<li class="not_active with_link"><a href="https://wiki.sipeed.com/hardware/en/modules_spmod/spmod_extender.html"><span class="label">SP-Extender</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="https://wiki.sipeed.com/hardware/en/modules_spmod/spmod_grove.html"><span class="label">SP-Grove</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="https://wiki.sipeed.com/hardware/en/modules_spmod/spmod_fpc.html"><span class="label">SP-FPC</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="https://wiki.sipeed.com/hardware/en/modules_spmod/spmod_micarray.html"><span class="label">SP-MicArray</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="https://wiki.sipeed.com/hardware/en/modules_spmod/spmod_joystick.html"><span class="label">SP-JotStick</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="https://wiki.sipeed.com/hardware/en/modules_spmod/spmod_servo.html"><span class="label">SP-Servo</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="https://wiki.sipeed.com/hardware/en/.html"><span class="label">SP-TypeC</span><span class=""></span></a></li>
+</ul>
+</li>
+<li class="not_active no_link"><a><span class="label">Sensor</span><span class="sub_indicator sub_indicator_collapsed"></span></a><ul class="">
+<li class="not_active with_link"><a href="https://wiki.sipeed.com/hardware/en/modules_spmod/spmod_weather.html"><span class="label">SP-Weather</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="https://wiki.sipeed.com/hardware/en/modules_spmod/spmod_tof.html"><span class="label">SP-TOF-1P</span><span class=""></span></a></li>
+</ul>
+</li>
+<li class="not_active no_link"><a><span class="label">Communication</span><span class="sub_indicator sub_indicator_collapsed"></span></a><ul class="">
+<li class="not_active with_link"><a href="https://wiki.sipeed.com/hardware/en/modules_spmod/spmod_bt.html"><span class="label">SP-BT</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="https://wiki.sipeed.com/hardware/en/modules_spmod/spmod_lora.html"><span class="label">SP-LoRa</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="https://wiki.sipeed.com/hardware/en/modules_spmod/spmod_psram.html"><span class="label">SP-PSRAM</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="https://wiki.sipeed.com/hardware/en/modules_spmod/spmod_rfid.html"><span class="label">SP-RFID</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="https://wiki.sipeed.com/hardware/en/modules_spmod/spmod_ethernet.html"><span class="label">SP-Ethernet</span><span class=""></span></a></li>
+</ul>
+</li>
+<li class="not_active no_link"><a><span class="label">Display</span><span class="sub_indicator sub_indicator_collapsed"></span></a><ul class="">
+<li class="not_active with_link"><a href="https://wiki.sipeed.com/hardware/en/modules_spmod/spmod_lcd1.14.html"><span class="label">SP-LCD 1.14</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="https://wiki.sipeed.com/hardware/en/modules_spmod/spmod_eink.html"><span class="label">SP-Eink</span><span class=""></span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="not_active no_link"><a><span class="label">Module &amp;&amp; Debugger</span><span class="sub_indicator sub_indicator_collapsed"></span></a><ul class="">
+<li class="not_active no_link"><a><span class="label">Debugger</span><span class="sub_indicator sub_indicator_collapsed"></span></a><ul class="">
+<li class="not_active no_link"><a><span class="label">Sipeed RV Debugger</span><span class=""></span></a></li>
+<li class="not_active no_link"><a><span class="label">Dual uart USB module</span><span class=""></span></a></li>
+</ul>
+</li>
+<li class="not_active no_link"><a><span class="label">module</span><span class="sub_indicator sub_indicator_collapsed"></span></a><ul class="">
+<li class="not_active no_link"><a><span class="label">camera</span><span class="sub_indicator sub_indicator_collapsed"></span></a><ul class="">
+<li class="not_active no_link"><a><span class="label">GC0328</span><span class=""></span></a></li>
+<li class="not_active no_link"><a><span class="label">Dual cam module(GC0328)</span><span class=""></span></a></li>
+<li class="not_active no_link"><a><span class="label">OV7740</span><span class=""></span></a></li>
+<li class="not_active no_link"><a><span class="label">OV2640</span><span class=""></span></a></li>
+<li class="not_active no_link"><a><span class="label">OV2640-M12</span><span class=""></span></a></li>
+<li class="not_active no_link"><a><span class="label">Dual cam module(OV2640)</span><span class=""></span></a></li>
+</ul>
+</li>
+<li class="not_active no_link"><a><span class="label">Mic module</span><span class="sub_indicator sub_indicator_collapsed"></span></a><ul class="">
+<li class="not_active with_link"><a href="https://wiki.sipeed.com/hardware/en/modules/micarray.html"><span class="label">Mic array</span><span class=""></span></a></li>
+</ul>
+</li>
+<li class="not_active with_link"><a href="https://wiki.sipeed.com/hardware/en/modules/Gamepad.html"><span class="label">Sipeed Gamepad</span><span class=""></span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            </div>
+        </div>
+        <div class="gutter gutter-horizontal" style="width: 3px; display: block;"><div class="gutter_icon"></div></div><div id="article" style="width: calc(81% - 0px);">
+            <div id="menu_wrapper">
+                <div id="menu">
+                </div>
+            </div>
+            <div id="content_wrapper">
+                <div id="content_body">
+                    <div id="article_head">
+                        <div id="article_title">
+                            
+                            <h1>Tang Primer 20K Dock Blink Led</h1>
+                            
+                        </div>
+                        <div id="article_tags">
+                            <ul>
+                            
+                                <li>Tang Primer 20K Dock，start</li>
+                            
+                            </ul>
+                        </div>
+                        <div id="article_info">
+                        <div id="article_info_left">
+                            <span class="article_author">
+                                
+                            </span>
+                            
+                                <span class="article_date" title="Last modify date: 2022-12-28">
+                                    2022-12-28
+                                </span>
+                            
+                        </div>
+                        <div id="article_info_right">
+                            
+                            <div id="source_link">
+                                <a target="_blank">
+                                    <span id="editPage">Edit this page</span>
+                                </a><div id="editPageHelp" style="display:none;"><div>View <a href="https://github.com/sipeed/sipeed_wiki/blob/main/docs/hardware/en/tang/tang-primer-20k/examples/led.md" target="_blank">source doc</a></div><div>For editing, please refer to <a href="https://wiki.sipeed.com/share_docs/en/" target="_blank">contribution guide</a></div></div>
+                            </div>
+                            
+                        <div id="print_page"></div></div>
+                        </div>
+                    </div>
+                    <div id="article_tools">
+                        <span></span>
+                        <span id="toc_btn"></span>
+                    </div>
+                    <div id="update_history">
+                        
+                        
+                        <details open="">
+                        
+                            <summary>Update history</summary>
+                            <div>
+                                <table>
+                                        <thead>
+                                            <tr>
+                                                <th>Date</th>
+                                                <th>Version</th>
+                                                <th>Author</th>
+                                                <th>Update content</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            
+                                                <tr>
+                                                    <td>2022-12-28</td>
+                                                    <td>v0.1</td>
+                                                    <td>wonder</td>
+                                                    <td>
+                                                    
+                                                        <ul>
+                                                        
+                                                            <li>Init file</li>
+                                                        
+                                                        </ul>
+                                                    
+                                                    </td>
+                                                </tr>
+                                            
+                                        </tbody>
+                                </table>
+                            </div>
+                        </details>
+                        
+                    </div>
+                    <div id="article_content">
+                        
+                            <p>To know a programming language, we start with <code>hello world</code>. But in hardware development, we start by blinking a led.</p>
+<h2 id="Install-IDE"><span class="sequence">1. </span>Install IDE<a class="anchor" href="#Install-IDE">#</a></h2>
+<p>Visit <a href="https://wiki.sipeed.com/hardware/en/tang/Tang-Nano-Doc/install-the-ide.html" target="_blank">install IDE</a> to prepare the development environment.</p>
+<p>For linux user we suggest using <a href="https://wiki.sipeed.com/hardware/zh/tang/Tang-Nano-Doc/get_started/flash_in_linux.html" target="_blank">openfpgaLoader</a> to burn the firmware into fpga.</p>
+<h2 id="New-Project"><span class="sequence">2. </span>New Project<a class="anchor" href="#New-Project">#</a></h2>
+<p>New Project：File--&gt;NEW--&gt;FPGA Design Project--&gt;OK</p>
+<img src="Tang%20Primer%2020K%20Dock%20Blink%20Led%20-%20Sipeed%20Wiki_files/LED-1.png" width="58%" alt="new_project">
+<p>Set Project Name and path, Project Name and project path should be English.</p>
+<p><img src="Tang%20Primer%2020K%20Dock%20Blink%20Led%20-%20Sipeed%20Wiki_files/project_path.png" alt="project_path"></p>
+<p>Select Device we choose GW2A-LV18PG256C8/I7, use filter like below to
+ help us choose device more easily. Note that the Device is GW2A-18C.</p>
+<p><img src="Tang%20Primer%2020K%20Dock%20Blink%20Led%20-%20Sipeed%20Wiki_files/device_choose.png" alt="device_choose"></p>
+<p>Then click OK to preview the project. After confirming no error, the project is created.</p>
+<h2 id="New-file"><span class="sequence">3. </span>New file<a class="anchor" href="#New-file">#</a></h2>
+<p>Gowin IDE contains 3 ways to create file. Here we use shortcut keys <code>Ctrl + N</code> to new a file. The other 2 ways to new file are not mentioned here,</p>
+<p>In the pop-up windows, we choose <code>Verilog File</code>, you can also choose <code>VHDL File</code> if you are good at it. Here we just use Verilog as example.</p>
+<img src="Tang%20Primer%2020K%20Dock%20Blink%20Led%20-%20Sipeed%20Wiki_files/new_verilog_file.png" width="50%" alt="new_verilog_file">
+<p>Then click OK to set the file name, here we take <code>led</code> as the verilog file name as example.</p>
+<img src="Tang%20Primer%2020K%20Dock%20Blink%20Led%20-%20Sipeed%20Wiki_files/file_name.png" width="75%" alt="file_name">
+<p>Up to now we have finished creating file, then we need to prepare our code.</p>
+<p><img src="Tang%20Primer%2020K%20Dock%20Blink%20Led%20-%20Sipeed%20Wiki_files/created_file.png" alt="created_file"></p>
+<h3 id="Verilog-introduction"><span class="sequence">3.1. </span>Verilog introduction<a class="anchor" href="#Verilog-introduction">#</a></h3>
+<p>Verilog is a kind of Hardware Description Language(HDL), it's used to describe digital circuits.</p>
+<p>The basic unit in Verilog is module.</p>
+<p>A module is composed of two parts: one describes the interface, and 
+the other describes the internal logic function, that is, defines how 
+the input affects the output.</p>
+<p>A module is like this:</p>
+
+<div class="code-toolbar"><pre class="line-numbers language-v" tabindex="0"><code class="language-v">module module_name
+#(parameter)
+(port) ;
+    function   
+endmodule
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre><div class="toolbar"><div class="toolbar-item"><button class="copy-to-clipboard-button" type="button" data-copy-state="copy"><span>Copy</span></button></div></div></div>
+<p>The module starts from module and ends by endmodule. The module is 
+followed by the module name (module_name), transitable variable 
+parameters (parameter), port and direction declaration (port), followed 
+by internal logic function description (function), and finally, 
+endmodule is used to represent this module.</p>
+<p>The internal logic function is usually composed by the assign and 
+always blocks; The assign statement describes logical circuit, and the 
+always block is used to describe timing circuit.</p>
+<h3 id="Blocking-and-Non-blocking-assignments"><span class="sequence">3.2. </span>Blocking and Non-blocking assignments<a class="anchor" href="#Blocking-and-Non-blocking-assignments">#</a></h3>
+<p>In timing logic, there are two assignment symbols: <code>=</code> and <code>&lt;=</code>. Note that <code>&lt;=</code> means less than or equal to in the if statement, and is not an assignment symbol in the if statement.</p>
+<p>Visit the <a href="#difference-between-blocking-and-non-blocking-assignments">difference between Blocking and Non-blocking assignments</a></p>
+<h3 id="Think-storm"><span class="sequence">3.3. </span>Think storm<a class="anchor" href="#Think-storm">#</a></h3>
+<p>Before coding, we need to think our purpose: The led flashes every 0.5S.</p>
+<p>Then we draw a demand block diagram as follows:</p>
+<p><img src="Tang%20Primer%2020K%20Dock%20Blink%20Led%20-%20Sipeed%20Wiki_files/block_method.png" alt="block_method"></p>
+<p>Then we need a counter to time of every 0.5S, LED flashes means IO flip.</p>
+<p><img src="Tang%20Primer%2020K%20Dock%20Blink%20Led%20-%20Sipeed%20Wiki_files/time_count.png" alt="count_block"></p>
+<p>Put the thought diagram into practical use, then it will look like this:</p>
+<p><img src="Tang%20Primer%2020K%20Dock%20Blink%20Led%20-%20Sipeed%20Wiki_files/clock_time_count.png" alt="clock_time_count"></p>
+<p>The Clock is the clock source, providing the accurate time for the time counter.</p>
+<h3 id="Code-description"><span class="sequence">3.4. </span>Code description<a class="anchor" href="#Code-description">#</a></h3>
+<p>From the verilog introduction and think storm diagram above, we can see the module we will create contains 2 ports:</p>
+
+<div class="code-toolbar"><pre class="line-numbers language-v" tabindex="0"><code class="language-v">module led(
+    input  Clock,
+    output IO_voltage
+);
+
+endmodule
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><div class="toolbar"><div class="toolbar-item"><button class="copy-to-clipboard-button" type="button" data-copy-state="copy"><span>Copy</span></button></div></div></div>
+<p>For time counter inside module, crystal oscillator on the Primer 20K 
+core board is 27MHZ, so we have 27 million times rising edges per 
+second, and we just need to count 13500000 times rising edges to get 0.5
+ seconds. The counter starts from <code>0</code>, and to count 13500000 
+times rising edges, we count to 13499999. When counted to 0.5S, we set a
+ flag to inform LED IO to flip its voltage. The overall count code is as
+ follows:</p>
+
+<div class="code-toolbar"><pre class="line-numbers language-v" tabindex="0"><code class="language-v">//parameter Clock_frequency = 27_000_000; // Crystal oscillator frequency is 27Mhz
+parameter count_value       = 13_499_999; // The number of times needed to time 0.5S
+
+reg [23:0]  count_value_reg ; // counter_value
+reg         count_value_flag; // IO change flag
+
+always @(posedge Clock) begin
+    if ( count_value_reg &lt;= count_value ) begin //not count to 0.5S
+        count_value_reg  &lt;= count_value_reg + 1'b1; // Continue counting
+        count_value_flag &lt;= 1'b0 ; // No flip flag
+    end
+    else begin //Count to 0.5S
+        count_value_reg  &lt;= 23'b0; // Clear counter,prepare for next time counting.
+        count_value_flag &lt;= 1'b1 ; // Flip flag
+    end
+end
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><div class="toolbar"><div class="toolbar-item"><button class="copy-to-clipboard-button" type="button" data-copy-state="copy"><span>Copy</span></button></div></div></div>
+<p>The code to change IO voltage are as follows:</p>
+
+<div class="code-toolbar"><pre class="line-numbers language-v" tabindex="0"><code class="language-v">reg IO_voltage_reg = 1'b0; // Initial state
+
+always @(posedge Clock) begin
+    if ( count_value_flag )  //  Flip flag 
+        IO_voltage_reg &lt;= ~IO_voltage_reg; // IO voltage flip
+    else //  No flip flag
+        IO_voltage_reg &lt;= IO_voltage_reg; // IO voltage constant
+end
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><div class="toolbar"><div class="toolbar-item"><button class="copy-to-clipboard-button" type="button" data-copy-state="copy"><span>Copy</span></button></div></div></div>
+<p>Combined with the codes above, it goes like this:</p>
+
+<div class="code-toolbar"><pre class="line-numbers language-v" tabindex="0"><code class="language-v">module led(
+    input  Clock,
+    output IO_voltage
+);
+
+/********** Counter **********/
+//parameter Clock_frequency = 27_000_000; // Crystal oscillator frequency is 27Mhz
+parameter count_value       = 13_499_999; // The number of times needed to time 0.5S
+
+reg [23:0]  count_value_reg ; // counter_value
+reg         count_value_flag; // IO change flag
+
+always @(posedge Clock) begin
+    if ( count_value_reg &lt;= count_value ) begin //not count to 0.5S
+        count_value_reg  &lt;= count_value_reg + 1'b1; // Continue counting
+        count_value_flag &lt;= 1'b0 ; // No flip flag
+    end
+    else begin //Count to 0.5S
+        count_value_reg  &lt;= 23'b0; // Clear counter,prepare for next time counting.
+        count_value_flag &lt;= 1'b1 ; // Flip flag
+    end
+end
+
+/********** IO voltage flip **********/
+reg IO_voltage_reg = 1'b0; // Initial state
+
+always @(posedge Clock) begin
+    if ( count_value_flag )  //  Flip flag 
+        IO_voltage_reg &lt;= ~IO_voltage_reg; // IO voltage flip
+    else //  No flip flag
+        IO_voltage_reg &lt;= IO_voltage_reg; // IO voltage constant
+end
+
+/***** Add an extra line of code *****/
+assign IO_voltage = IO_voltage_reg;
+
+endmodule
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><div class="toolbar"><div class="toolbar-item"><button class="copy-to-clipboard-button" type="button" data-copy-state="copy"><span>Copy</span></button></div></div></div>
+<p>Because the <code>IO_voltage</code> is declared in the port position, which is wire type by default. To connect it to the reg variable <code>IO_voltage_reg</code>, we need to use assign.</p>
+<h2 id="Synthesize%2C-constrain%2C-place%26amp%3Broute"><span class="sequence">4. </span>Synthesize, constrain, place&amp;route<a class="anchor" href="#Synthesize%2C-constrain%2C-place%26amp%3Broute">#</a></h2>
+<h3 id="Synthesize"><span class="sequence">4.1. </span>Synthesize<a class="anchor" href="#Synthesize">#</a></h3>
+<p>After finishing the code, go to the "Process" interface and double 
+click "Synthesize" to synthesize our code to convert the verilog code 
+content to netlist.</p>
+<p><img src="Tang%20Primer%2020K%20Dock%20Blink%20Led%20-%20Sipeed%20Wiki_files/synthesize.png" alt="Synthesize"></p>
+<h3 id="Constraint"><span class="sequence">4.2. </span>Constraint<a class="anchor" href="#Constraint">#</a></h3>
+<p>After Synthesizing our code, we need to set constrains to bind the 
+ports defined in our code to fpga pins, by which we can realize our 
+module function on fpga.</p>
+<p>Click the FloorPlanner in the top of Synthesize to set constrains.</p>
+<p><img src="Tang%20Primer%2020K%20Dock%20Blink%20Led%20-%20Sipeed%20Wiki_files/floorplanner.png" alt="floorplanner"></p>
+<p>Since this is the first time we create it, the following dialog box 
+will pop up. Click OK and the graphical constraint interface will pop 
+up.</p>
+<p><img src="Tang%20Primer%2020K%20Dock%20Blink%20Led%20-%20Sipeed%20Wiki_files/create_constrain_file.png" alt="create_constrain_file"></p>
+<p><img src="Tang%20Primer%2020K%20Dock%20Blink%20Led%20-%20Sipeed%20Wiki_files/floorplanner_interface.png" alt="floorplanner_intreface"></p>
+<p>The ways to constraint the file can be get from this docs: <a href="https://dl.sipeed.com/fileList/TANG/Nano%209K/6_Chip_Manual/EN/General%20Guide/SUG935-1.3E_Gowin%20Design%20Physical%20Constraints%20User%20Guide.pdf" target="_blank">SUG935-1.3E_Gowin Design Physical Constraints User Guide.pdf</a></p>
+<p>Here we only use the IO Constraints method shown below to constrain the pins:</p>
+<p><img src="Tang%20Primer%2020K%20Dock%20Blink%20Led%20-%20Sipeed%20Wiki_files/floor_planner_ioconstrain.png" alt="floor_planner_ioconstrain"></p>
+<p>According to <a href="https://dl.sipeed.com/shareURL/TANG/Primer_20K/02_Schematic" target="_blank">Schematic of core board</a>, we can know the input pin of crystal oscillator is H11。</p>
+<img src="Tang%20Primer%2020K%20Dock%20Blink%20Led%20-%20Sipeed%20Wiki_files/crystal_port.png" alt="crystal_port" width="45%">
+<p>Taking into consideration the IO screen printing on the ext_board, we decide to use the L14 pin on the ext_board for flashing.</p>
+<p><img src="Tang%20Primer%2020K%20Dock%20Blink%20Led%20-%20Sipeed%20Wiki_files/led_port.png" alt="led_port"></p>
+<p>So for the IO Constraints under the FloorPlanner interactive window, we fill in the following values for PORT and Location:</p>
+<p><img src="Tang%20Primer%2020K%20Dock%20Blink%20Led%20-%20Sipeed%20Wiki_files/io_constrain_value.png" alt="io_constrain_value"></p>
+<p>Finishing filling, use <code>Ctrl + S</code> to save constraints file, then close FloorPlanner interactive graphical interface.</p>
+<p>Then we see there is a .cst file in our project, and its content are easy to understand.</p>
+<p><img src="Tang%20Primer%2020K%20Dock%20Blink%20Led%20-%20Sipeed%20Wiki_files/cst_content.png" alt="cst_content"></p>
+<h3 id="Place-%26amp%3B-Route"><span class="sequence">4.3. </span>Place &amp; Route<a class="anchor" href="#Place-%26amp%3B-Route">#</a></h3>
+<p>After finishing constraining, we run Place &amp; Route. The purpose 
+is to synthesize the generated netlist and our defined constraints to 
+calculate the optimal solution through IDE, then allocate resources 
+reasonably on the FPGA chip.</p>
+<p>Double click Place&amp;Route marked with red box to run.</p>
+<p><img src="Tang%20Primer%2020K%20Dock%20Blink%20Led%20-%20Sipeed%20Wiki_files/place_route.png" alt="place_route"></p>
+<p>Then there is no error, everything works well, we can burn our fpga.</p>
+<h2 id="Burn-bitstream"><span class="sequence">5. </span>Burn bitstream<a class="anchor" href="#Burn-bitstream">#</a></h2>
+<p>There is onboard programmer for downloading bitstream, and drivers have been installed when <a href="https://wiki.sipeed.com/hardware/en/tang/Tang-Nano-Doc/install-the-ide.html" target="_blank">install IDE</a>, we connect dock ext-board with computer.</p>
+<p><img src="Tang%20Primer%2020K%20Dock%20Blink%20Led%20-%20Sipeed%20Wiki_files/connected.png" alt="connected"></p>
+<h3 id="Scan-device"><span class="sequence">5.1. </span>Scan device<a class="anchor" href="#Scan-device">#</a></h3>
+<p>Make sure you have enabled the core board first, put the 1 switch on the dip switch down.</p>
+<p><img src="Tang%20Primer%2020K%20Dock%20Blink%20Led%20-%20Sipeed%20Wiki_files/switch_1_on.png" alt="Enable_core_board"></p>
+<p>Double click <code>Program Device</code> to run Programmer application</p>
+<p><img src="Tang%20Primer%2020K%20Dock%20Blink%20Led%20-%20Sipeed%20Wiki_files/open_programmer.png" alt="open_programmer"></p>
+<p>Click scan_device to scan device</p>
+<p><img src="Tang%20Primer%2020K%20Dock%20Blink%20Led%20-%20Sipeed%20Wiki_files/scan_device.png" alt="scan_device"></p>
+<p>Click OK to finish selecting device.</p>
+<h3 id="Burn-to-SRAM"><span class="sequence">5.2. </span>Burn to SRAM<a class="anchor" href="#Burn-to-SRAM">#</a></h3>
+<p>Normally this mode is used to verify biststream.</p>
+<p>Because of its fast burning characteristics so the use of more, but 
+of course the power will lose data, so if you want to power on the 
+running program you can't choose this mode.</p>
+<p>Click the function box below Operation to open the device 
+configuration interface, then select the SRAM Mode option in Access Mode
+ to set to download to SRAM, and finally click the three dots box below 
+to select our generated <code>.fs</code> bitstream file . Generally speaking, bitstream firmware file is in the impl -&gt; pnr directory.</p>
+<p><img src="Tang%20Primer%2020K%20Dock%20Blink%20Led%20-%20Sipeed%20Wiki_files/sram_mode.png" alt="sram_mode"></p>
+<p>Click where the red box is to burn firmware.</p>
+<p><img src="Tang%20Primer%2020K%20Dock%20Blink%20Led%20-%20Sipeed%20Wiki_files/sram_download.png" alt="sram_download"></p>
+<p>Go to <a href="https://wiki.sipeed.com/hardware/en/tang/Tang-Nano-Doc/questions.html" target="_blank">Questions</a> if you have any trouble。</p>
+<p>Here we finished downloading into SRAM。</p>
+<h3 id="Burn-into-Flash"><span class="sequence">5.3. </span>Burn into Flash<a class="anchor" href="#Burn-into-Flash">#</a></h3>
+<p>Burning into sram is used for verifying bitstream, but can't store program.<br>
+If we want to run application at startup, we need to burn into flash.</p>
+<p>This steps are similar to the steps above of burning to SRAM.</p>
+<p>Click the function box below Operation to open the device 
+configuration interface, then select the External Flash Mode in the 
+Access Mode to burn into external Flash. Finally click the three dots 
+below to select the.fs we generated to download the firmware. Choose the
+ three dots box below to select our generated <code>.fs</code> bitstream
+ file. Generally speaking, bitstream firmware file is in the impl -&gt; 
+pnr directory. Finally, select the Generic Flash device from the 
+following external Flash options.</p>
+<p><img src="Tang%20Primer%2020K%20Dock%20Blink%20Led%20-%20Sipeed%20Wiki_files/flash_mode.png" alt="flash_mode"></p>
+<p>Click where the red box is to burn firmware.</p>
+<p><img src="Tang%20Primer%2020K%20Dock%20Blink%20Led%20-%20Sipeed%20Wiki_files/flash_download.png" alt="flash_download"></p>
+<p>Then we can run our program when power on.</p>
+<h3 id="Result"><span class="sequence">5.4. </span>Result<a class="anchor" href="#Result">#</a></h3>
+<p>One led flashes like below.</p>
+<p><img src="Tang%20Primer%2020K%20Dock%20Blink%20Led%20-%20Sipeed%20Wiki_files/led_blink.gif" alt="led_blink"></p>
+<h2 id="End"><span class="sequence">6. </span>End<a class="anchor" href="#End">#</a></h2>
+<p>Up to now we have finished blinking led on fpga, and know how to use GOWIN IDE with fpga.。</p>
+<h2 id="Difference-between-Blocking-and-Non-blocking-assignments"><span class="sequence">7. </span>Difference between Blocking and Non-blocking assignments<a class="anchor" href="#Difference-between-Blocking-and-Non-blocking-assignments">#</a></h2>
+<p>Write a simple codes and simulate it:</p>
+
+<div class="code-toolbar"><pre class="line-numbers language-v" tabindex="0"><code class="language-v">module test(
+    input      CLK,
+    input      [3:0] A,
+    output reg [3:0] B,C,D,E
+);
+
+always@(posedge CLK)
+begin
+    B &lt;= A;
+    C &lt;= B;
+
+    D  = A;
+    E  = D;
+end
+endmodule
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><div class="toolbar"><div class="toolbar-item"><button class="copy-to-clipboard-button" type="button" data-copy-state="copy"><span>Copy</span></button></div></div></div>
+<p><img src="Tang%20Primer%2020K%20Dock%20Blink%20Led%20-%20Sipeed%20Wiki_files/simulation_result.png" alt="simulation_result"></p>
+<p>According to the simulation results, we can see the difference between blocking and non-blocking assignments by comparing the <code>B</code> <code>C</code> <code>D</code> <code>E</code> four results. <code>&lt;=</code> is non-blocking assignments, and all <code>&lt;=</code> in a <code>always</code> run at the same time, this lead the result in green box, <code>B</code> is assigned the value of <code>A</code> while <code>C</code> is assigned the value of <code>B</code>, this happens at the same time, so <code>C</code> is assigned the old value of <code>B</code>, the value of <code>C</code> is one clock delay of <code>B</code>. <code>=</code> is blocking assignments, all <code>=</code> in a <code>always</code> runs sequentially. In this code, <code>D</code> is assigned the value of <code>A</code>, then <code>D</code> is assigned the value of <code>E</code>, so <code>D</code> and <code>E</code> are the same value.</p>
+<blockquote>
+<p>In general, however, blocking assignment is not recommended in timing logic.</p>
+</blockquote>
+<p>And we get two results:</p>
+<ul>
+<li>Input data is not always valid, it depends on the clock edge. If the
+ data is maintained for less than one clock cycle, it may regard useless
+ data.</li>
+<li>Every time Triggering the edge clock, the <code>always</code> block runs from begin to the end, not runs from the middle.</li>
+</ul>
+<h2 id="Questions"><span class="sequence">8. </span>Questions<a class="anchor" href="#Questions">#</a></h2>
+<h3 id="No-Cable-found"><span class="sequence">8.1. </span>No Cable found<a class="anchor" href="#No-Cable-found">#</a></h3>
+<p>Check if there are two converters in device manager, reinstall 
+programmer driver if there are no two converters in device manager.</p>
+<p><img src="Tang%20Primer%2020K%20Dock%20Blink%20Led%20-%20Sipeed%20Wiki_files/usb_converter.png" alt="converter"></p>
+<h3 id="No-gowin-device-found"><span class="sequence">8.2. </span>No gowin device found<a class="anchor" href="#No-gowin-device-found">#</a></h3>
+<p>Make sure you have enabled the core board.</p>
+<h3 id="Other-questions"><span class="sequence">8.3. </span>Other questions<a class="anchor" href="#Other-questions">#</a></h3>
+<p>Visit <a href="https://wiki.sipeed.com/hardware/en/tang/Tang-Nano-Doc/questions.html" target="_blank">Gowin errors to solve this problem</a></p>
+
+                        
+                    </div>
+                <div class="thumbs-message"><div class="thumbs-message-content"></div></div><div id="thumbs_up_container"><button class="thumbs-up"><img src="Tang%20Primer%2020K%20Dock%20Blink%20Led%20-%20Sipeed%20Wiki_files/up.svg" class="thumbs-up-icon"><span class="thumbs-up-label">Helpful</span><span class="thumbs-up-count">(12)</span></button><button class="thumbs-down"><img src="Tang%20Primer%2020K%20Dock%20Blink%20Led%20-%20Sipeed%20Wiki_files/up.svg" class="thumbs-down-icon"><span class="thumbs-down-label">Not Helpful</span><span class="thumbs-down-count"></span></button></div></div>
+                <div id="previous_next">
+                    <div id="previous">
+                        
+                    </div>
+                    <div id="next">
+                        
+                    </div>
+                </div>
+                <div id="comments-container"><div class="gt-container"><div class="gt-meta"><span class="gt-counts"><a class="gt-link gt-link-counts" href="https://github.com/sipeed/sipeed_wiki/issues/542" target="_blank" rel="noopener noreferrer">0</a> comments</span><div class="gt-user"><div class="gt-user-inner"><span class="gt-user-name">Anonymous</span><span class="gt-ico gt-ico-arrdown"><span class="gt-svg"><svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" p-id="1619"><path d="M511.872 676.8c-0.003 0-0.006 0-0.008 0-9.137 0-17.379-3.829-23.21-9.97l-251.277-265.614c-5.415-5.72-8.743-13.464-8.744-21.984 0-17.678 14.33-32.008 32.008-32.008 9.157 0 17.416 3.845 23.25 10.009l228.045 241.103 228.224-241.088c5.855-6.165 14.113-10.001 23.266-10.001 8.516 0 16.256 3.32 21.998 8.736 12.784 12.145 13.36 32.434 1.264 45.233l-251.52 265.6c-5.844 6.155-14.086 9.984-23.223 9.984-0.025 0-0.051 0-0.076 0z" p-id="1620"></path></svg></span></span></div></div></div><div class="gt-header"><a class="gt-avatar-github"><span class="gt-ico gt-ico-github"><span class="gt-svg"><svg viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <path d="M64 524C64 719.602 189.356 885.926 364.113 947.017 387.65799 953 384 936.115 384 924.767L384 847.107C248.118 863.007 242.674 773.052 233.5 758.001 215 726.501 171.5 718.501 184.5 703.501 215.5 687.501 247 707.501 283.5 761.501 309.956 800.642 361.366 794.075 387.658 787.497 393.403 763.997 405.637 743.042 422.353 726.638 281.774 701.609 223 615.67 223 513.5 223 464.053 239.322 418.406 271.465 381.627 251.142 320.928 273.421 269.19 276.337 261.415 334.458 256.131 394.888 302.993 399.549 306.685 432.663 297.835 470.341 293 512.5 293 554.924 293 592.81 297.896 626.075 306.853 637.426 298.219 693.46 258.054 747.5 262.966 750.382 270.652 772.185 321.292 753.058 381.083 785.516 417.956 802 463.809 802 513.5 802 615.874 742.99 701.953 601.803 726.786 625.381 750.003 640 782.295 640 818.008L640 930.653C640.752 939.626 640 948.664978 655.086 948.665 832.344 888.962 960 721.389 960 524 960 276.576 759.424 76 512 76 264.577 76 64 276.576 64 524Z"></path>
+</svg>
+</span></span></a><div class="gt-header-comment"><textarea class="gt-header-textarea " placeholder="Leave a comment" style="overflow: hidden; overflow-wrap: break-word; resize: none; height: 72px;"></textarea><div class="gt-header-preview markdown-body hide"></div><div class="gt-header-controls"><a class="gt-header-controls-tip" href="https://guides.github.com/features/mastering-markdown/" target="_blank" rel="noopener noreferrer"><span class="gt-ico gt-ico-tip"><span class="gt-svg"><svg viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <path d="M512 366.949535c-16.065554 0-29.982212 13.405016-29.982212 29.879884l0 359.070251c0 16.167882 13.405016 29.879884 29.982212 29.879884 15.963226 0 29.879884-13.405016 29.879884-29.879884L541.879884 396.829419C541.879884 380.763865 528.474868 366.949535 512 366.949535L512 366.949535z" p-id="3083"></path>
+  <path d="M482.017788 287.645048c0-7.776956 3.274508-15.553912 8.80024-21.181973 5.525732-5.525732 13.302688-8.80024 21.181973-8.80024 7.776956 0 15.553912 3.274508 21.079644 8.80024 5.525732 5.62806 8.80024 13.405016 8.80024 21.181973 0 7.776956-3.274508 15.656241-8.80024 21.181973-5.525732 5.525732-13.405016 8.697911-21.079644 8.697911-7.879285 0-15.656241-3.274508-21.181973-8.697911C485.292295 303.301289 482.017788 295.524333 482.017788 287.645048L482.017788 287.645048z" p-id="3084"></path>
+  <path d="M512 946.844409c-239.8577 0-434.895573-195.037873-434.895573-434.895573 0-239.8577 195.037873-434.895573 434.895573-434.895573 239.755371 0 434.895573 195.037873 434.895573 434.895573C946.895573 751.806535 751.755371 946.844409 512 946.844409zM512 126.17088c-212.740682 0-385.880284 173.037274-385.880284 385.777955 0 212.740682 173.037274 385.777955 385.880284 385.777955 212.740682 0 385.777955-173.037274 385.777955-385.777955C897.777955 299.208154 724.740682 126.17088 512 126.17088z" p-id="3085"></path>
+</svg>
+</span><span class="gt-ico-text">Markdown is supported</span></span></a><button class="gt-btn gt-btn-preview"><span class="gt-btn-text">Preview</span></button><button class="gt-btn gt-btn-login"><span class="gt-btn-text">Login with GitHub</span></button></div></div></div><div class="gt-comments"><div style="position: relative;"></div><p class="gt-comments-null">Be the first person to leave a comment!</p></div></div></div>
+            </div>
+            <div id="toc_wrapper">
+                <div id="toc">
+                    <div id="toc_content"><ol class="toc-list "><li class="toc-list-item"><a href="#Install-IDE" class="toc-link node-name--H2 ">Install IDE</a></li><li class="toc-list-item"><a href="#New-Project" class="toc-link node-name--H2 ">New Project</a></li><li class="toc-list-item is-active-li"><a href="#New-file" class="toc-link node-name--H2  is-active-link">New file</a><ol class="toc-list  is-collapsible"><li class="toc-list-item"><a href="#Verilog-introduction" class="toc-link node-name--H3 ">Verilog introduction</a></li><li class="toc-list-item"><a href="#Blocking-and-Non-blocking-assignments" class="toc-link node-name--H3 ">Blocking and Non-blocking assignments</a></li><li class="toc-list-item"><a href="#Think-storm" class="toc-link node-name--H3 ">Think storm</a></li><li class="toc-list-item"><a href="#Code-description" class="toc-link node-name--H3 ">Code description</a></li></ol></li><li class="toc-list-item"><a href="#Synthesize%2C-constrain%2C-place%26amp%3Broute" class="toc-link node-name--H2 ">Synthesize, constrain, place&amp;route</a><ol class="toc-list  is-collapsible is-collapsed"><li class="toc-list-item"><a href="#Synthesize" class="toc-link node-name--H3 ">Synthesize</a></li><li class="toc-list-item"><a href="#Constraint" class="toc-link node-name--H3 ">Constraint</a></li><li class="toc-list-item"><a href="#Place-%26amp%3B-Route" class="toc-link node-name--H3 ">Place &amp; Route</a></li></ol></li><li class="toc-list-item"><a href="#Burn-bitstream" class="toc-link node-name--H2 ">Burn bitstream</a><ol class="toc-list  is-collapsible is-collapsed"><li class="toc-list-item"><a href="#Scan-device" class="toc-link node-name--H3 ">Scan device</a></li><li class="toc-list-item"><a href="#Burn-to-SRAM" class="toc-link node-name--H3 ">Burn to SRAM</a></li><li class="toc-list-item"><a href="#Burn-into-Flash" class="toc-link node-name--H3 ">Burn into Flash</a></li><li class="toc-list-item"><a href="#Result" class="toc-link node-name--H3 ">Result</a></li></ol></li><li class="toc-list-item"><a href="#End" class="toc-link node-name--H2 ">End</a></li><li class="toc-list-item"><a href="#Difference-between-Blocking-and-Non-blocking-assignments" class="toc-link node-name--H2 ">Difference between Blocking and Non-blocking assignments</a></li><li class="toc-list-item"><a href="#Questions" class="toc-link node-name--H2 ">Questions</a><ol class="toc-list  is-collapsible is-collapsed"><li class="toc-list-item"><a href="#No-Cable-found" class="toc-link node-name--H3 ">No Cable found</a></li><li class="toc-list-item"><a href="#No-gowin-device-found" class="toc-link node-name--H3 ">No gowin device found</a></li><li class="toc-list-item"><a href="#Other-questions" class="toc-link node-name--H3 ">Other questions</a></li></ol></li></ol></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a id="to_top" href="#"></a>
+    <div id="doc_footer">
+        <div id="footer">
+            <div id="footer_top">
+                <ul>
+<li><a>links</a><ul><li><a target="_blank" href="https://www.sipeed.com/">Sipeed</a></li>
+<li><a target="_blank" href="https://maixhub.com/">MaixHub</a></li>
+<li><a target="_blank" href="https://sipeed.aliexpress.com/store/911876460">Sipeed AliExpress</a></li>
+<li><a target="_blank" href="https://github.com/neutree/teedoc">Build by teedoc </a></li>
+</ul>
+</li>
+<li><a>Source Code</a><ul><li><a target="_blank" href="https://github.com/sipeed/sipeed_wiki">Wiki source</a></li>
+<li><a target="_blank" href="https://github.com/sipeed">Open Source Projects</a></li>
+</ul>
+</li>
+<li><a>Follow us</a><ul><li><a target="_blank" href="https://twitter.com/SipeedIO">twitter</a></li>
+<li><a target="_blank" href="https://sipeed.aliexpress.com/store/911876460">AliExpress</a></li>
+<li><a target="_blank" href="https://github.com/sipeed">github</a></li>
+<li><a></a><a>Wechat</a><img src="Tang%20Primer%2020K%20Dock%20Blink%20Led%20-%20Sipeed%20Wiki_files/wechat.png">
+</li>
+</ul>
+</li>
+<li><a>Contact us</a><ul><li><a>Tel: +86 0755-27808509</a>
+</li>
+<li><a>Business support: support@sipeed.com</a>
+</li>
+<li><a>Address: 深圳市宝安区新湖路4008号蘅芳科技办公大厦A座-2101C</a>
+</li>
+<li><a href="https://wiki.sipeed.com/join_us.html">Join us</a></li>
+</ul>
+</li>
+</ul>
+
+            </div>
+            <div id="footer_bottom">
+                <ul>
+<li><a target="_blank" href="https://www.sipeed.com/">©2018-2023 深圳矽速科技有限公司</a></li>
+<li><a target="_blank" href="https://beian.miit.gov.cn/#/Integrated/index">粤ICP备19015433号</a></li>
+</ul>
+
+            </div>
+        </div>
+    </div>
+    
+        <script src="Tang%20Primer%2020K%20Dock%20Blink%20Led%20-%20Sipeed%20Wiki_files/mermaid.min.js"></script>
+    
+        <script>mermaid.initialize({startOnLoad:true});</script>
+    
+        <script type="text/javascript">
+                var transLoaded = false;
+                var loading = false;
+                var domain = "translate.google.com";
+                var domainDefault = domain;
+                var storeDomain = localStorage.getItem("googleTransDomain");
+                if(storeDomain){
+                    domain = storeDomain;
+                    console.log("load google translate domain from local storage:" + domain);
+                }
+                function getUrl(domain){
+                    if(domain == "/")
+                        return "/static/js/google_translate/element.js?cb=googleTranslateElementInit";
+                    else
+                        return "https://" + domain + "/translate_a/element.js?cb=googleTranslateElementInit";
+                }
+                var url = getUrl(domain);
+                console.log("google translate domain:" + domain + ", url: " + url);
+                function googleTranslateElementInit() {
+                    new google.translate.TranslateElement({pageLanguage: "auto", layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+                }
+                function loadJS( url, callback ){
+                    var script = document.createElement('script');
+                    fn = callback || function(){ };
+                    script.type = 'text/javascript';
+                    if(script.readyState){
+                        script.onreadystatechange = function(){
+                            if( script.readyState == 'loaded' || script.readyState == 'complete' ){
+                                script.onreadystatechange = null;
+                                fn();
+                            }
+                        };
+                    }else{
+                        script.onload = function(){
+                            fn();
+                        };
+                    }
+                    script.src = url;
+                    document.getElementsByTagName('head')[0].appendChild(script);
+                }
+                function removeHint(){
+                    var hint = document.getElementById("loadingTranslate");
+                    if(hint){
+                        hint.remove();
+                    }
+                }
+                var btn = document.getElementById("google_translate_element");
+                btn.onclick = function(){
+                    if(transLoaded) return;
+                    if(loading){
+                        var flag = confirm("loading from " + domain + ", please wait, or change domain?");
+                        if(flag){
+                            newDomain = prompt("domain, default: " + domainDefault + ", now: " + domain);
+                            if(newDomain){
+                                domain = newDomain;
+                                console.log(domain);
+                                url = getUrl(domain);
+                                loadJS(url, function(){
+                                    localStorage.setItem("googleTransDomain", domain);
+                                    removeHint()
+                                    transLoaded = true;
+                                });
+                            }
+                        }
+                        return;
+                    }
+                    btn.innerHTML = '<span id="loadingTranslate"><img class="icon" src="/static/image/google_translate/translate.svg"/>Loading ...</span>';
+                    loading = true;
+                    loadJS(url, function(){
+                        localStorage.setItem("googleTransDomain", domain);
+                        removeHint()
+                        transLoaded = true;
+                    });
+                }
+                </script>
+            
+    
+        <script src="Tang%20Primer%2020K%20Dock%20Blink%20Led%20-%20Sipeed%20Wiki_files/main_002.js"></script>
+    
+        <script src="Tang%20Primer%2020K%20Dock%20Blink%20Led%20-%20Sipeed%20Wiki_files/tocbot.min.js"></script>
+    
+        <script src="Tang%20Primer%2020K%20Dock%20Blink%20Led%20-%20Sipeed%20Wiki_files/main.js"></script>
+    
+        <script src="Tang%20Primer%2020K%20Dock%20Blink%20Led%20-%20Sipeed%20Wiki_files/viewer.min.js"></script>
+    
+        <script src="Tang%20Primer%2020K%20Dock%20Blink%20Led%20-%20Sipeed%20Wiki_files/prism.js"></script>
+    
+        <script src="Tang%20Primer%2020K%20Dock%20Blink%20Led%20-%20Sipeed%20Wiki_files/search_main.js"></script>
+    
+        <script src="Tang%20Primer%2020K%20Dock%20Blink%20Led%20-%20Sipeed%20Wiki_files/gitalk.min.js"></script>
+    
+        <script src="Tang%20Primer%2020K%20Dock%20Blink%20Led%20-%20Sipeed%20Wiki_files/main_004.js"></script>
+    
+        <link rel="stylesheet" href="Tang%20Primer%2020K%20Dock%20Blink%20Led%20-%20Sipeed%20Wiki_files/style.css" type="text/css">
+    
+        <script src="Tang%20Primer%2020K%20Dock%20Blink%20Led%20-%20Sipeed%20Wiki_files/main_005.js"></script>
+    
+        <script src="Tang%20Primer%2020K%20Dock%20Blink%20Led%20-%20Sipeed%20Wiki_files/custom.js"></script>
+    
+        <script src="Tang%20Primer%2020K%20Dock%20Blink%20Led%20-%20Sipeed%20Wiki_files/main_003.js"></script>
+    
+
+
+<div id="wot-new-assistant-container"><div data-reactroot=""></div></div><div id="search_wrapper">        <div>            <div id="search_content">                <div id="search_title">                    <div>                        <input id="search_input" placeholder="Input keyword. Using Space to separate multiple keywords">                    </div>                </div>                <div id="search_result">                    <div id="search_result_name"></div>                    <div id="search_result_content"></div>                </div>            </div>        </div><a class="close"></a></div></body></html>
