@@ -1,0 +1,10 @@
+{
+	"cSpell.language": "en,ru,ru-RU,en-US",
+	"cSpell.enableFiletypes": [
+		"verilog",
+		"verilog-filelist"
+	],
+	"cSpell.words": [
+		"endcase"
+	]
+}
