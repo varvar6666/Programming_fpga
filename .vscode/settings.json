@@ -3,5 +3,6 @@
 	"cSpell.enableFiletypes": [
 		"verilog",
 		"verilog-filelist"
-	]
+	],
+	"cmake.sourceDirectory": "D:/fpga/Programming_fpga/M1_example"
 }
