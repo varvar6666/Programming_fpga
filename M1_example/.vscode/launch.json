@@ -1,0 +1,130 @@
+{
+  "version": "0.2.1",
+  "configurations": [
+	{
+		"cwd": "${workspaceFolder}",
+		"executable": "${command:cmake.launchTargetPath}",
+		"device" : "${dev}",//"STM32F446RE",
+		"name": "ST-Link Launch",
+		// "serialNumber": "066CFF575383564867215114",
+		"request": "launch",
+		"type": "cortex-debug",
+		"runToEntryPoint": "main",
+		"showDevDebugOutput": "none",
+		"servertype": "stlink",
+		"liveWatch": {
+			"enabled": true,
+			"samplesPerSecond": 10
+		},
+		"preLaunchTask": "Build",
+		"preRestartCommands" : [ "load", "enable breakpoint", "monitor reset" ],
+		// "svdPath": "${command:vscode-embedded.st.svd}/STM32F446.svd"
+		"svdPath": "${workspaceFolder}/../Drivers/SVD/STM32G431.svd"
+	},
+	{
+		"cwd": "${workspaceFolder}",
+		"executable": "${command:cmake.launchTargetPath}",
+		"device" : "STM32F446RE",
+		"name": "ST-Link Attach",
+		// "serialNumber": "066CFF575383564867215114",
+		"request": "attach",
+		"type": "cortex-debug",
+		"runToEntryPoint": "main",
+		"showDevDebugOutput": "none",
+		"servertype": "stlink",
+		"liveWatch": {
+			"enabled": true,
+			"samplesPerSecond": 10
+		},
+		"preRestartCommands" : [ "load", "enable breakpoint", "monitor reset" ],
+		// "svdPath": "${command:vscode-embedded.st.svd}/STM32F446.svd"
+		"svdPath": "${workspaceFolder}/../Drivers/SVD/STM32G431.svd"
+	},
+	{
+		"cwd": "${workspaceFolder}",
+		"executable": "${command:cmake.launchTargetPath}",
+		"device" : "STM32F446RE",
+		"name": "ST-Link-OCD",
+		// "serialNumber": "066CFF575383564867215114",
+		"request": "launch",
+		"type": "cortex-debug",
+		"interface": "swd",
+		"runToEntryPoint": "main",
+		"showDevDebugOutput": "raw",
+		"servertype": "openocd",
+		"liveWatch": {
+			"enabled": true,
+			"samplesPerSecond": 10
+		},
+		"preLaunchTask": "Build",
+		"preRestartCommands" : [ "load", "enable breakpoint", "monitor reset" ],
+		"svdPath": "${command:vscode-embedded.st.svd}/STM32F446.svd",
+		"configFiles": [
+			"C:/openocd/share/openocd/scripts/interface/stlink-v2-1.cfg",
+			"C:/openocd/share/openocd/scripts/target/stm32f4x.cfg"
+		],
+	},
+	{
+		"cwd": "${workspaceFolder}",
+		"executable": "${command:cmake.launchTargetPath}",
+		"device" : "STM32F446RE",
+		"name": "ST-Link-OCD-SWO",
+		// "serialNumber": "066CFF575383564867215114",
+		"request": "launch",
+		"type": "cortex-debug",
+		"interface": "swd",
+		"runToEntryPoint": "main",
+		"showDevDebugOutput": "raw",
+		"servertype": "openocd",
+		"liveWatch": {
+			"enabled": true,
+			"samplesPerSecond": 10
+		},
+		"preLaunchTask": "Build",
+		"preRestartCommands" : [ "load", "enable breakpoint", "monitor reset" ],
+		"svdPath": "${command:vscode-embedded.st.svd}/STM32F446.svd",
+		"configFiles": [
+			"C:/openocd/share/openocd/scripts/interface/stlink-v2-1.cfg",
+			"C:/openocd/share/openocd/scripts/target/stm32f4x.cfg"
+		],
+		"swoConfig": {
+			"enabled": true,
+			"source": "probe",
+			"swoFrequency": 2000000,
+			"cpuFrequency": 16000000,
+			"decoders": [
+				{
+					"port": 0,
+					"type": "console",
+					"label": "SWO OUT",
+					"encoding": "ascii"
+				}
+			]
+		}
+	},
+	{
+		"name": "VS_Launch",
+		"type": "cppdbg",
+		"request": "launch",
+		"cwd": "${workspaceFolder}",
+		"program": "${command:cmake.launchTargetPath}",
+		"MIMode": "gdb",
+		"miDebuggerPath": "${command:vscode-embedded.st.gdb}",
+		"miDebuggerServerAddress": "localhost:3333",
+		"debugServerPath": "${command:vscode-embedded.st.gdbserver}",
+		"debugServerArgs": "--stm32cubeprogrammer-path ${command:vscode-embedded.st.cubeprogrammer} --swd --port-number 3333",
+		"serverStarted": "Waiting for connection on port .*\\.\\.\\.",
+		"stopAtConnect": true,
+		"postRemoteConnectCommands": [
+		  {
+			"text": "load build/program.elf"
+		  }
+		],
+		"logging": {
+		  "engineLogging": true
+		},
+		"preLaunchTask": "Build",
+		"svdPath": "${command:vscode-embedded.st.svd}/STM32F446.svd"
+	  }
+  ]
+}

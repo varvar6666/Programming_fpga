@@ -1,0 +1,76 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+		"label": "Build",
+		"type": "cmake",
+		"command": "build",
+		"problemMatcher": "$gcc",
+		"group": {
+		  "kind": "build",
+		  "isDefault": true
+		}
+	  },
+	  {
+		  "label": "Clean project",
+		  "type": "cmake",
+		  "command": "clean",
+		  "problemMatcher": "$gcc",
+		  "group": {
+			  "kind": "build",
+			  "isDefault": true
+		  },
+	  },
+	  {
+		  "type": "cmake",
+		  "command": "configure",
+		  "label": "config",
+		  "problemMatcher": "$gcc",
+		  "group": {
+			  "kind": "build",
+			  "isDefault": true
+		  },
+	  },
+	{
+		"type": "shell",
+		"label": "flash",
+		"command": "STM32_Programmer_CLI.exe",
+		"args": [
+			"\"-c port=SWD freq=4000\"",
+			"\"-w ${workspaceFolder}/build/${workspaceFolderBasename}.elf 0x0800000\"",
+			"\"-g\""
+		],
+		"options": {
+		  "cwd": "${workspaceFolder}"
+		},
+		"dependsOn": "Build",
+		"problemMatcher": [],
+		"group": {
+		  "kind": "build",
+		  "isDefault": true
+		},
+		"detail": "Builds project and flashes firmware."
+  
+	  },
+	  {
+		"type": "shell",
+		"label": "full chip erase",
+		"command": "STM32_Programmer_CLI.exe",
+		"args": [
+			"-c port=SWD freq=4000",
+			"-e all"
+		],
+		"options": {
+		  "cwd": "${workspaceFolder}"
+		},
+		"problemMatcher": [],
+		"group": {
+			"kind": "build",
+			"isDefault": true
+		  },
+		"detail": "full chip erase"
+  
+	  },
+
+  ]
+}

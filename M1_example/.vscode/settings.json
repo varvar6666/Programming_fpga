@@ -1,0 +1,57 @@
+{
+	"cmake.configureOnOpen": true,
+	"cmake.configureSettings": {
+		"prj_name": "${workspaceFolderBasename}"
+	},
+	"cmake.configureArgs": [
+        "-G Ninja",
+    ],
+	// "cortex-debug.armToolchainPath.windows": "C:/Program Files (x86)/Arm GNU Toolchain arm-none-eabi/13.2 Rel1/bin",
+	// "cortex-debug.stm32cubeprogrammer.windows": "C:/Program Files/STMicroelectronics/STM32Cube/STM32CubeProgrammer/bin",
+// 	"cortex-debug.stlinkPath.windows": "C:/ST/STM32CubeIDE_1.14.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.stlink-gdb-server.win32_2.1.100.202310302101/tools/bin/ST-LINK_gdbserver.exe",
+	"cortex-debug.serverpath": "${config:STM32VSCodeExtension.cubeCLT.path}/STLink-gdb-server/bin/ST-LINK_gdbserver",
+	"cortex-debug.stm32cubeprogrammer":"${config:STM32VSCodeExtension.cubeCLT.path}/STM32CubeProgrammer/bin",
+	"cortex-debug.stlinkPath": "${config:STM32VSCodeExtension.cubeCLT.path}/STLink-gdb-server/bin/ST-LINK_gdbserver",   
+	"cortex-debug.armToolchainPath": "${config:STM32VSCodeExtension.cubeCLT.path}/GNU-tools-for-STM32/bin",
+	"cortex-debug.gdbPath":"${config:STM32VSCodeExtension.cubeCLT.path}/GNU-tools-for-STM32/bin/arm-none-eabi-gdb",  
+	"cortex-debug.openocdPath": "${config:OpenOCD.path}/bin/openocd.exe",
+	// "cortex-debug.openocdPath": "C:/openocd/bin/openocd.exe",
+	"VsCodeTaskButtons.tasks": [
+        // {
+        //     "label": "$(checklist) Build",
+        //     "task": "Build",
+        //     "tooltip": "🛠️ Start the \"build\" task"
+        // },
+		{
+            "label": "$(clear-all) Clean build",
+            "task": "Clean project",
+            "tooltip": "🧹 Start a \"clean\" task"
+        },
+		{
+            "label": "$(output) Config",
+            "task": "config",
+            "tooltip": "Config"
+        },
+		{
+            "label": "$(run) Run",
+            "task": "flash",
+            "tooltip": "Build and run"
+        },
+		{
+            "label": "$(close) Full-Erase",
+            "task": "full chip erase",
+            "tooltip": "full chip erase"
+        },
+
+	],
+	"files.associations": {
+		"cstdint": "c",
+		"gowin_m1_it.h": "c",
+		"gowin_m1.h": "c",
+		"gowin_m1_gpio.h": "c",
+		"core_cm1.h": "c",
+		"stdint.h": "c",
+		"demo.h": "c"
+	},
+	"cortex-debug.variableUseNaturalFormat": true,
+}
