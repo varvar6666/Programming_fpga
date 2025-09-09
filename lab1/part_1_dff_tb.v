@@ -1,53 +1,79 @@
 `timescale 1ns/100ps // 1 ns time unit, 100 ps resolution
 
-module full_add_tb;
+module part_1_top_tb;
+	reg clk=1;
+	always #5 clk = !clk;
 
-	reg a = 0, b = 0, carry = 0;
-	wire sum, carry_out;
+	reg d = 0;
+	wire q;
 
 	reg[15:0] time_of_err = 16'bx;
 	wire mismatch;
 
-	reg sum_compare = 0, carry_out_compare = 0;
+	reg q_compare = 0;
 	reg isErr = 0;
 
 	event gen_result;
 
-	assign mismatch = (sum ^ sum_compare) || (carry_out ^ carry_out_compare);
+	assign mismatch = (q != q_compare);
 
-	full_add full_add_mod0
+	part_1_top_module top0
 	(
-		.a(a),
-		.b(b),
-		.cin(carry),
-		.cout(carry_out),
-		.sum(sum)
+		.d(d),
+		.q(q),
+		.clk(clk)
 	);
 
 	initial begin
 		$dumpfile("wave.vcd");		// create a VCD waveform dump called "wave.vcd"
-		$dumpvars(0, full_add_tb);		// dump variable changes in the testbench
+		$dumpvars(0, part_1_top_tb);		// dump variable changes in the testbench
 									// and all modules under it
+		q_compare <= 1'bx;
+		@(posedge clk);
+		@(posedge clk);
+		d <= 1;
+		@(posedge clk);
+		q_compare <= 0;
+		@(posedge clk);
+		d <= 0;
+		@(posedge clk);
+		q_compare <= 1;
+		@(posedge clk);
+		@(posedge clk);
+		d <= 1;
+		q_compare <= 0;
+		@(posedge clk);
+		@(posedge clk);
+		@(posedge clk);
+		d <= 0;
+		q_compare <= 1;
+		@(posedge clk);
+		@(posedge clk);
+		@(posedge clk);
+		q_compare <= 0;
+		@(posedge clk);
+		@(posedge clk);
 
-		#5 b = 1; sum_compare = 1; carry_out_compare = 0;
-		#5 a = 1; b = 0; sum_compare = 1; carry_out_compare = 0;
-		#5 b = 1; sum_compare = 0; carry_out_compare = 1;
-		#5 a = 0; b = 0; sum_compare = 0; carry_out_compare = 0;
-		#5 carry = 1; sum_compare = 1; carry_out_compare = 0;
-		#5 a = 1; sum_compare = 0; carry_out_compare = 1;
-		#5 a = 0; b = 1; sum_compare = 0; carry_out_compare = 1;
-		#5 -> gen_result;
+		// #10 d = 1;
+		// #5 d = 1;
+		// #5 d = 0;
+		// #5 d = 1;
+		// #5 d = 1;
+		// #5 d = 0;
 
-
+		@(posedge clk); 
+		-> gen_result;
+	
+		
 	end
 
 	always @(*) begin
-		if (sum === 1'bz) begin
+		if (q === 1'bz) begin
 			isErr = 1;
 			time_of_err = time_of_err === 16'bx ? $time : time_of_err;
 			$display("p1y is in high-impedance (Z) state at t=%d", $time);
 		end
-		if (sum === 1'bx) begin
+		if (q === 1'bx) begin
 			isErr = 1;
 			time_of_err = time_of_err === 16'bx ? $time : time_of_err;
 			$display("p1y is in unknown (X) state at t=%d", $time);
@@ -55,7 +81,8 @@ module full_add_tb;
 	end
 
 	always @ (posedge mismatch) begin
-		if (((sum ^ sum_compare) || (carry_out ^ carry_out_compare))) begin
+		#0.1
+		if (q != q_compare) begin
 			isErr = 1;
 			time_of_err = time_of_err === 16'bx ? $time : time_of_err;
 		end
@@ -76,6 +103,6 @@ module full_add_tb;
 	end
 
 	initial begin
-		$monitor("t=%-4d: sum = %d, cout = %d", $time, sum, carry_out);
+		$monitor("t=%-4d: d = %d, q = %d", $time, d, q);
 	end
 endmodule

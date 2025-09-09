@@ -1,7 +1,7 @@
 // Place your settings in this file to overwrite default and user settings.
 {
 	"verilog.icarusBuildDirectory": "out",
-	"verilog.icarusCompileArguments": "-Y.sv -y. -g2005-sv",
+	"verilog.icarusCompileArguments": "-Y.sv -y.",
 	"VsCodeTaskButtons.tasks": [
 		{
             "label": "$(window) GTK-wave",
