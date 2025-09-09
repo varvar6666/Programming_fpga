@@ -4,7 +4,7 @@ module chip_7458 (
     input p2a, p2b, p2c, p2d,
     output p2y );
 
-    // write code here
+// write code here
 
 
 
