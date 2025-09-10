@@ -2,14 +2,14 @@
 
 module chip_7458_tb;
 
-	reg p1a,p1b,p1c,p1d,p1e,p1f;
-	reg p2a,p2b,p2c,p2d;
+	reg p1a = 0,p1b = 0,p1c = 0,p1d = 0,p1e = 0,p1f = 0;
+	reg p2a = 0,p2b = 0,p2c = 0,p2d = 0;
 	reg[15:0] time_of_err;
 	wire p1y, p2y;
 	wire mismatch;
 	
 
-	reg p1y_compare, p2y_compare;
+	reg p1y_compare = 0, p2y_compare = 0;
 	reg isErr;
 
 	chip_7458 chip_7458_mod0
@@ -36,9 +36,11 @@ module chip_7458_tb;
 		$dumpfile("wave.vcd");		// create a VCD waveform dump called "wave.vcd"
 		$dumpvars(0, chip_7458_tb);		// dump variable changes in the testbench
 									// and all modules under it
-		isErr = 0; time_of_err = 0;
+		isErr = 0; time_of_err = 16'bx;
 
-		p1a=0; p1b=0; p1c=0; p1d=0; p1e=0; p1f=0; p2a=0; p2b=0; p2c=0; p2d=0; p1y_compare = 0; p2y_compare = 0;
+
+
+		#5;p1a=0; p1b=0; p1c=0; p1d=0; p1e=0; p1f=0; p2a=0; p2b=0; p2c=0; p2d=0; p1y_compare = 0; p2y_compare = 0;
 		#5;p1a=0; p1b=0; p1c=0; p1d=0; p1e=0; p1f=0; p2a=0; p2b=0; p2c=0; p2d=0; p1y_compare = 0; p2y_compare = 0;
 		#5;p1a=0; p1b=0; p1c=1; p1d=0; p1e=0; p1f=0; p2a=0; p2b=0; p2c=0; p2d=1; p1y_compare = 0; p2y_compare = 0;
 		#5;p1a=0; p1b=1; p1c=0; p1d=0; p1e=0; p1f=1; p2a=0; p2b=0; p2c=1; p2d=0; p1y_compare = 0; p2y_compare = 0;
@@ -68,14 +70,24 @@ module chip_7458_tb;
 	end
 
 
-
-
+	always @(*) begin
+		if (p1y === 1'bz) begin
+			isErr = 1;
+			time_of_err = time_of_err === 16'bx ? $time : time_of_err;
+			$display("p1y is in high-impedance (Z) state at t=%d", $time);
+		end
+		if (p1y === 1'bx) begin
+			isErr = 1;
+			time_of_err = time_of_err === 16'bx ? $time : time_of_err;
+			$display("p1y is in unknown (X) state at t=%d", $time);
+		end
+	end
 
 
 	always @ (posedge mismatch) begin
 		if (((p1y ^ p1y_compare) || (p2y ^ p2y_compare))) begin
 			isErr = 1;
-			time_of_err = time_of_err == 0 ? $time : time_of_err;
+			time_of_err = time_of_err === 16'bx ? $time : time_of_err;
 		end
 	end
 

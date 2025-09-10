@@ -5,7 +5,7 @@ module full_add_tb;
 	reg a = 0, b = 0, carry = 0;
 	wire sum, carry_out;
 
-	reg[15:0] time_of_err = 0;
+	reg[15:0] time_of_err = 16'bx;
 	wire mismatch;
 
 	reg sum_compare = 0, carry_out_compare = 0;
@@ -41,10 +41,23 @@ module full_add_tb;
 
 	end
 
+	always @(*) begin
+		if (sum === 1'bz) begin
+			isErr = 1;
+			time_of_err = time_of_err === 16'bx ? $time : time_of_err;
+			$display("p1y is in high-impedance (Z) state at t=%d", $time);
+		end
+		if (sum === 1'bx) begin
+			isErr = 1;
+			time_of_err = time_of_err === 16'bx ? $time : time_of_err;
+			$display("p1y is in unknown (X) state at t=%d", $time);
+		end
+	end
+
 	always @ (posedge mismatch) begin
 		if (((sum ^ sum_compare) || (carry_out ^ carry_out_compare))) begin
 			isErr = 1;
-			time_of_err = time_of_err == 0 ? $time : time_of_err;
+			time_of_err = time_of_err === 16'bx ? $time : time_of_err;
 		end
 	end
 

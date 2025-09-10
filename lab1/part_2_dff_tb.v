@@ -8,7 +8,7 @@ module part_2_top_tb;
 	reg [1:0]sel = 0;
 	wire [7:0]q;
 
-	reg[15:0] time_of_err = 0;
+	reg[15:0] time_of_err = 16'bx;
 	wire mismatch;
 
 	reg[7:0] q_compare = 1'bx;
@@ -64,11 +64,24 @@ module part_2_top_tb;
 		
 	end
 
+	always @(*) begin
+		if (q === 8'bz) begin
+			isErr = 1;
+			time_of_err = time_of_err === 16'bx ? $time : time_of_err;
+			$display("p1y is in high-impedance (Z) state at t=%d", $time);
+		end
+		if (q === 8'bx) begin
+			isErr = 1;
+			time_of_err = time_of_err === 16'bx ? $time : time_of_err;
+			$display("p1y is in unknown (X) state at t=%d", $time);
+		end
+	end
+
 	always @ (posedge mismatch) begin
 		#0.1
 		if (q != q_compare) begin
 			isErr = 1;
-			time_of_err = time_of_err == 0 ? $time : time_of_err;
+			time_of_err = time_of_err === 16'bx ? $time : time_of_err;
 		end
 	end
 

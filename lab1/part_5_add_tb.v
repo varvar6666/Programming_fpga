@@ -5,7 +5,7 @@ module part_5_top_tb;
 	reg sub = 0;
 	wire [31:0]sum;
 
-	reg[15:0] time_of_err = 0;
+	reg[15:0] time_of_err = 16'bx;
 	wire mismatch;
 
 	reg[31:0] sum_compare = 0;
@@ -40,11 +40,24 @@ module part_5_top_tb;
 	
 	end
 
+	always @(*) begin
+		if (sum === 32'bz) begin
+			isErr = 1;
+			time_of_err = time_of_err === 16'bx ? $time : time_of_err;
+			$display("p1y is in high-impedance (Z) state at t=%d", $time);
+		end
+		if (sum === 32'bx) begin
+			isErr = 1;
+			time_of_err = time_of_err === 16'bx ? $time : time_of_err;
+			$display("p1y is in unknown (X) state at t=%d", $time);
+		end
+	end
+
 	always @ (posedge mismatch) begin
 		#0.1
 		if (sum != sum_compare) begin
 			isErr = 1;
-			time_of_err = time_of_err == 0 ? $time : time_of_err;
+			time_of_err = time_of_err === 16'bx ? $time : time_of_err;
 		end
 	end
 
