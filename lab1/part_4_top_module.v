@@ -23,14 +23,7 @@ module part_4_top_module (input [31:0]a, input [31:0]b, input cin, output [31:0]
         .cout(carry_upper_to_final)
     );
     
-    // Третий 16-битный сумматор для обработки конечного переноса
-    add16 add_carry (
-        .a(16'b0),              // Нулевые входы
-        .b(16'b0),
-        .cin(carry_upper_to_final),
-        .sum(),                 // Сумма не используется
-        .cout(cout)             // Конечный перенос
-    );
+
 
 endmodule
 
