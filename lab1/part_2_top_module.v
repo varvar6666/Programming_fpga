@@ -1,6 +1,24 @@
+module part_2_top_module (input [7:0] d, input [1:0] sel, input clk, output reg [7:0] q);
 
-module part_2_top_module (input [7:0]d, input [1:0]sel, input clk, output reg [7:0]q);
-
-    // write code here
+    // Внутренние регистры для трех триггеров
+    reg [7:0] q1, q2, q3;
+    
+    // Три последовательных 8-битных D-триггера
+    always @(posedge clk) begin
+        q1 <= d;    // Первый триггер - задержка на 1 такт
+        q2 <= q1;   // Второй триггер - задержка на 2 такта
+        q3 <= q2;   // Третий триггер - задержка на 3 такта
+    end
+    
+    // Мультиплексор для выбора выхода
+    always @(*) begin
+        case (sel)
+            2'b00: q = d;    // Прямой вход (без задержки)
+            2'b01: q = q1;   // Задержка на 1 такт
+            2'b10: q = q2;   // Задержка на 2 такта
+            2'b11: q = q3;   // Задержка на 3 такта
+            default: q = 8'bx;
+        endcase
+    end
 
 endmodule
