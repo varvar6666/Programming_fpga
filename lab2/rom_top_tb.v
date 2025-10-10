@@ -4,7 +4,7 @@ module rom_top_tb;
 
 
 	reg[1:0] adr;
-	reg[3:0] dout;
+	wire[3:0] dout;
 
 	rom_top top0
 	(

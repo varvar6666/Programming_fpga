@@ -4,7 +4,7 @@ module sevenseg_top_tb;
 
 
 	reg[3:0] data;
-	reg[6:0] segments;
+	wire[6:0] segments;
 
 	sevenseg_top top0
 	(
