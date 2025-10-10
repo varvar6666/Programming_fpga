@@ -10,7 +10,7 @@ module ram_top #(parameter N = 6, M = 32)
     assign dout = adr == 0 ? 0 : mem[adr];
     
     always @(posedge clk)
-        if (we) mem [adr] <= din;
+        if (we && (adr != {N{1'b0}})) mem [adr] <= din;
         
 
 endmodule

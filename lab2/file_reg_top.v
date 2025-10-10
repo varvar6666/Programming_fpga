@@ -14,7 +14,7 @@ module file_reg_top (
 
     // Синхронная запись
     always @(posedge clk)
-        if (we) registers[waddr] <= wdata;
+        if (we && (waddr != 5'b0)) registers[waddr] <= wdata;
 
     // Асинхронное чтение с возвратом 0 для адреса 0
     assign rdata1 = (raddr1 == 5'b0) ? 32'h0 : registers[raddr1];
