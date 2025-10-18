@@ -1,0 +1,13 @@
+VCD info: dumpfile wave.vcd opened for output.
+t=0   : adr =  0, dout =          0
+t=10  : adr =  1, dout =          x
+t=20  : adr =  1, dout =         10
+t=30  : adr = 15, dout =          x
+t=40  : adr = 15, dout =      64018
+t=50  : adr =  1, dout =         10
+t=60  : adr =  0, dout =          0
+t=80  : adr =  8, dout =          x
+t=90  : adr =  8, dout = 4294967295
+t=100 : adr =  1, dout =         10
+t=110 : adr =  1, dout =         15
+ram_top_tb.v:54: $finish called at 1300 (100ps)

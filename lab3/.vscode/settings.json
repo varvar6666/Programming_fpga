@@ -9,6 +9,10 @@
             "tooltip": "View wave"
         },
 	],
-	"cSpell.language": "en,ru-RU,ru,en-US"
+	"cSpell.language": "en,ru-RU,ru,en-US",
+	"ROS2.distro": "jazzy",
+	"python.autoComplete.extraPaths": [
+		"/opt/ros/jazzy/lib/python3.12/site-packages"
+	]
 
 }

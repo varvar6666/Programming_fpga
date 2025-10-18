@@ -1,0 +1,14 @@
+VCD info: dumpfile wave.vcd opened for output.
+t=0: we=0, waddr=00, wdata=00000000, raddr1=00, rdata1=00000000, raddr2=00, rdata2=00000000
+t=100: we=1, waddr=00, wdata=deadbeef, raddr1=00, rdata1=00000000, raddr2=00, rdata2=00000000
+t=200: we=0, waddr=00, wdata=deadbeef, raddr1=00, rdata1=00000000, raddr2=00, rdata2=00000000
+t=300: we=1, waddr=01, wdata=cafebabe, raddr1=00, rdata1=00000000, raddr2=00, rdata2=00000000
+t=400: we=0, waddr=01, wdata=cafebabe, raddr1=00, rdata1=00000000, raddr2=01, rdata2=cafebabe
+t=500: we=1, waddr=02, wdata=12345678, raddr1=00, rdata1=00000000, raddr2=01, rdata2=cafebabe
+t=600: we=0, waddr=02, wdata=12345678, raddr1=02, rdata1=12345678, raddr2=00, rdata2=00000000
+t=700: we=0, waddr=02, wdata=12345678, raddr1=00, rdata1=00000000, raddr2=00, rdata2=00000000
+t=800: we=0, waddr=02, wdata=12345678, raddr1=01, rdata1=cafebabe, raddr2=02, rdata2=12345678
+t=900: we=0, waddr=02, wdata=12345678, raddr1=02, rdata1=12345678, raddr2=01, rdata2=cafebabe
+t=1000: we=1, waddr=02, wdata=87654321, raddr1=02, rdata1=12345678, raddr2=01, rdata2=cafebabe
+t=1100: we=0, waddr=02, wdata=87654321, raddr1=02, rdata1=87654321, raddr2=02, rdata2=87654321
+file_reg_top_tb.v:94: $finish called at 1200 (100ps)

@@ -1,0 +1,6 @@
+VCD info: dumpfile wave.vcd opened for output.
+t=0   : data = 0, segments = 10
+t=5   : data = 1, segments = 14
+t=10  : data = 2, segments =  1
+t=15  : data = 3, segments = 13
+rom_top_tb.v:26: $finish called at 200 (100ps)

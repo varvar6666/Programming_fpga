@@ -1,0 +1,27 @@
+VCD info: dumpfile wave.vcd opened for output.
+t=0: op=00000, a=00000000, b=00000000, result=00000000, flag=0
+t=50: op=00000, a=00000005, b=00000003, result=00000008, flag=0
+t=150: op=01000, a=00000005, b=00000003, result=00000002, flag=0
+t=250: op=00001, a=00000001, b=00000003, result=00000008, flag=0
+t=350: op=00010, a=fffffffe, b=00000001, result=00000001, flag=0
+t=450: op=00011, a=fffffffe, b=00000001, result=00000000, flag=0
+t=550: op=00100, a=000000af, b=000000fa, result=00000055, flag=0
+t=650: op=00101, a=80000000, b=00000001, result=40000000, flag=0
+t=750: op=01101, a=80000000, b=00000003, result=f0000000, flag=0
+t=850: op=00110, a=0000000f, b=000000f0, result=000000ff, flag=0
+t=950: op=00111, a=0000000f, b=000000f0, result=00000000, flag=0
+t=1050: op=11000, a=00000005, b=00000005, result=00000000, flag=1
+t=1150: op=11000, a=00000005, b=00000006, result=00000000, flag=0
+t=1250: op=11001, a=00000005, b=00000005, result=00000000, flag=0
+t=1350: op=11001, a=00000005, b=00000006, result=00000000, flag=1
+t=1450: op=11100, a=fffffffe, b=00000001, result=00000000, flag=1
+t=1550: op=11100, a=0ffffffe, b=f0000001, result=00000000, flag=0
+t=1650: op=11101, a=00000001, b=fffffffe, result=00000000, flag=1
+t=1750: op=11101, a=00000001, b=00000001, result=00000000, flag=1
+t=1850: op=11101, a=00000001, b=00000002, result=00000000, flag=0
+t=1950: op=11110, a=00000001, b=fffffffe, result=00000000, flag=1
+t=2050: op=11110, a=00000001, b=00000000, result=00000000, flag=0
+t=2150: op=11111, a=10000000, b=fffffffe, result=00000000, flag=0
+t=2250: op=11111, a=10000000, b=10000000, result=00000000, flag=1
+t=2350: op=11111, a=10000000, b=01111111, result=00000000, flag=1
+alu_top_tb.v:160: $finish called at 2450 (100ps)

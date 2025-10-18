@@ -1,0 +1,12 @@
+VCD info: dumpfile wave.vcd opened for output.
+t=0   : data =  0, segments = 126
+t=5   : data =  1, segments =  48
+t=10  : data =  2, segments = 109
+t=15  : data =  3, segments = 121
+t=20  : data =  4, segments =  51
+t=25  : data =  5, segments =  91
+t=30  : data =  6, segments =  95
+t=35  : data =  7, segments = 112
+t=40  : data =  8, segments = 127
+t=45  : data =  9, segments = 115
+sevenseg_top_tb.v:32: $finish called at 500 (100ps)

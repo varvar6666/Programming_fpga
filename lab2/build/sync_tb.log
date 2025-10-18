@@ -1,0 +1,16 @@
+VCD info: dumpfile wave.vcd opened for output.
+t=0   : signal = 0, signal_sync = x
+t=2   : signal = 1, signal_sync = x
+t=20  : signal = 1, signal_sync = 1
+t=30  : signal = 0, signal_sync = 1
+t=50  : signal = 0, signal_sync = 0
+t=56  : signal = 1, signal_sync = 0
+t=62  : signal = 0, signal_sync = 0
+t=70  : signal = 1, signal_sync = 1
+t=74  : signal = 0, signal_sync = 1
+t=78  : signal = 1, signal_sync = 1
+t=80  : signal = 1, signal_sync = 0
+t=81  : signal = 0, signal_sync = 0
+t=90  : signal = 0, signal_sync = 1
+t=100 : signal = 0, signal_sync = 0
+sync_top_tb.v:47: $finish called at 1100 (100ps)
