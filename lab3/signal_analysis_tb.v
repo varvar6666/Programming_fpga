@@ -44,6 +44,10 @@ assign clk5 = clk;
 assign clk6 = clk;
 
 initial begin
+    // Initialize VCD dump
+    $dumpfile("out/signal_analysis_tb.vcd");
+    $dumpvars(0, signal_analysis_tb);
+    
     // Тест части 1
     $display("Testing Part 1: Combinational circuit");
     a1 = 0; b1 = 0; c1 = 0; #10;

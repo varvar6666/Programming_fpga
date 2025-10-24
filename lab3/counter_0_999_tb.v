@@ -18,6 +18,10 @@ initial begin
 end
 
 initial begin
+    // Initialize VCD dump
+    $dumpfile("out/counter_0_999_tb.vcd");
+    $dumpvars(0, counter_0_999_tb);
+    
     reset = 1;
     #20 reset = 0;
     

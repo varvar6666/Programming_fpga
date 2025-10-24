@@ -6,13 +6,32 @@
 		{
 			"label" : "Run GTK-wave",
 			"type": "shell",
-			"command": "gtkwave.exe",
+			"command": "gtkwave",
 			"args": [
-				".\\out\\*.vcd"
+				"./out/${input:fileName}.vcd"
 			],
 			"options": {
 			  "cwd": "${workspaceFolder}"
 			},
+		},
+		{
+			"label" : "Run GTK-wave (All VCD files)",
+			"type": "shell",
+			"command": "gtkwave",
+			"args": [
+				"./out/*.vcd"
+			],
+			"options": {
+			  "cwd": "${workspaceFolder}"
+			},
+		}
+	],
+	"inputs": [
+		{
+			"id": "fileName",
+			"description": "Enter the testbench name (without .v extension)",
+			"default": "counter_0_999_tb",
+			"type": "promptString"
 		}
 	]
 }

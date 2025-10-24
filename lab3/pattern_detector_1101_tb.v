@@ -20,6 +20,10 @@ initial begin
 end
 
 initial begin
+    // Initialize VCD dump
+    $dumpfile("out/pattern_detector_1101_tb.vcd");
+    $dumpvars(0, pattern_detector_1101_tb);
+    
     reset = 1;
     data_in = 0;
     #20 reset = 0;

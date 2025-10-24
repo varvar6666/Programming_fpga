@@ -22,6 +22,10 @@ initial begin
 end
 
 initial begin
+    // Initialize VCD dump
+    $dumpfile("out/shift_register_counter_tb.vcd");
+    $dumpvars(0, shift_register_counter_tb);
+    
     shift_ena = 0;
     count_ena = 0;
     data_in = 0;

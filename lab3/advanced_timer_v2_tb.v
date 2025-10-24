@@ -24,6 +24,10 @@ initial begin
 end
 
 initial begin
+    // Initialize VCD dump
+    $dumpfile("out/advanced_timer_v2_tb.vcd");
+    $dumpvars(0, advanced_timer_v2_tb);
+    
     reset = 1;
     data = 0;
     ack = 0;

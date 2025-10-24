@@ -26,6 +26,10 @@ module simple_debug_tb;
     end
 
     initial begin
+        // Initialize VCD dump
+        $dumpfile("out/simple_debug_tb.vcd");
+        $dumpvars(0, simple_debug_tb);
+        
         reset = 1;
         data = 0;
         ack = 0;

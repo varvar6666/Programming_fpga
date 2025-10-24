@@ -24,6 +24,10 @@ initial begin
 end
 
 initial begin
+    // Initialize VCD dump
+    $dumpfile("out/debug_timer_tb.vcd");
+    $dumpvars(0, debug_timer_tb);
+    
     reset = 1;
     data = 0;
     ack = 0;

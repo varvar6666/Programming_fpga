@@ -24,6 +24,10 @@ initial begin
 end
 
 initial begin
+    // Initialize VCD dump
+    $dumpfile("out/simple_timer_test_tb.vcd");
+    $dumpvars(0, simple_timer_test_tb);
+    
     reset = 1;
     data = 0;
     ack = 0;

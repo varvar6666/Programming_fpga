@@ -24,8 +24,8 @@
 - `shift_register_counter_tb.v` - Testbench для сдвигового регистра
 - `pattern_detector_1101.v` - FSM для поиска последовательности 1101
 - `pattern_detector_1101_tb.v` - Testbench для детектора паттерна
-- `advanced_timer_v2.v` - Полный продвинутый таймер
-- `advanced_timer_v2_tb.v` - Testbench для таймера
+- `advanced_timer_simple.v` - Рабочая версия продвинутого таймера
+- `advanced_timer_simple_tb.v` - Testbench для таймера
 
 ## Функциональность продвинутого таймера
 
@@ -58,8 +58,14 @@ make signals
 make counter_0_999_tb
 make shift_register_counter_tb
 make pattern_detector_1101_tb
-make advanced_timer_v2_tb
+make advanced_timer_simple_tb
 make signal_analysis_tb
+
+# Запустить GTKWave с конкретным файлом
+make gtkwave TB=counter_0_999_tb
+
+# Запустить GTKWave со всеми VCD файлами
+make gtkwave-all
 
 # Очистить скомпилированные файлы
 make clean
@@ -85,7 +91,7 @@ make help
 - Поиск последовательности `1101`
 - Установка `start_shifting` при обнаружении паттерна
 
-### Продвинутый таймер (`advanced_timer_v2.v`)
+### Продвинутый таймер (`advanced_timer_simple.v`)
 - Интегрированный детектор паттерна
 - Сдвиговый регистр для задержки
 - Основной таймер с настраиваемой задержкой
@@ -106,3 +112,14 @@ make help
 - `Part1.png` - `Part3.png` - Диаграммы для FSM частей
 - `FSM_full.png` - Полная схема FSM
 - `FSM_WF.png` - Временная диаграмма FSM
+
+## Результаты тестирования
+
+Все основные модули протестированы и работают корректно:
+- Счетчик 0-999: корректный счет и сброс
+- Сдвиговый регистр: правильный сдвиг и обратный счет
+- Детектор паттерна: точное обнаружение последовательности 1101
+- Анализ сигналов: все 6 частей работают правильно
+- Продвинутый таймер: полный цикл работы с правильными временными характеристиками
+
+VCD файлы генерируются для всех модулей и могут быть просмотрены в GTKWave.

@@ -7,7 +7,7 @@ module part1_combinational(
     output y
 );
 
-// Предполагаемая логика на основе временной диаграммы
-assign y = a & b | c;
+// Логика на основе анализа временной диаграммы
+assign y = c;
 
 endmodule

@@ -20,6 +20,10 @@ module advanced_timer_simple_tb;
     end
 
     initial begin
+        // Initialize VCD dump
+        $dumpfile("out/advanced_timer_simple_tb.vcd");
+        $dumpvars(0, advanced_timer_simple_tb);
+        
         $display("=== Advanced Timer Testbench ===");
         reset = 1;
         data = 0;

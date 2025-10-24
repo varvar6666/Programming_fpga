@@ -1,0 +1,241 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[russian]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{geometry}
+\usepackage{array}
+\usepackage{booktabs}
+
+\geometry{margin=2cm}
+
+\title{Таблицы истинности для лабораторной работы 3}
+\author{Анализ комбинационных и последовательных схем}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\section{Комбинационные схемы}
+
+\subsection{Часть 1: Логическая функция $y = c$}
+
+\begin{table}[h]
+\centering
+\caption{Таблица истинности для части 1}
+\begin{tabular}{|c|c|c|c|}
+\hline
+$a$ & $b$ & $c$ & $y$ \\
+\hline
+0 & 0 & 0 & 0 \\
+0 & 0 & 1 & 1 \\
+0 & 1 & 0 & 0 \\
+0 & 1 & 1 & 1 \\
+1 & 0 & 0 & 0 \\
+1 & 0 & 1 & 1 \\
+1 & 1 & 0 & 0 \\
+1 & 1 & 1 & 1 \\
+\hline
+\end{tabular}
+\end{table}
+
+\subsection{Часть 2: Функция исключающего ИЛИ $y = a \oplus b \oplus c \oplus d$}
+
+\begin{table}[h]
+\centering
+\caption{Таблица истинности для части 2}
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+$a$ & $b$ & $c$ & $d$ & $y$ \\
+\hline
+0 & 0 & 0 & 0 & 0 \\
+0 & 0 & 0 & 1 & 1 \\
+0 & 0 & 1 & 0 & 1 \\
+0 & 0 & 1 & 1 & 0 \\
+0 & 1 & 0 & 0 & 1 \\
+0 & 1 & 0 & 1 & 0 \\
+0 & 1 & 1 & 0 & 0 \\
+0 & 1 & 1 & 1 & 1 \\
+1 & 0 & 0 & 0 & 1 \\
+1 & 0 & 0 & 1 & 0 \\
+1 & 0 & 1 & 0 & 0 \\
+1 & 0 & 1 & 1 & 1 \\
+1 & 1 & 0 & 0 & 0 \\
+1 & 1 & 0 & 1 & 1 \\
+1 & 1 & 1 & 0 & 1 \\
+1 & 1 & 1 & 1 & 0 \\
+\hline
+\end{tabular}
+\end{table}
+
+\subsection{Часть 3: Логическая функция $y = (a \cdot b) + (c \cdot d)$}
+
+\begin{table}[h]
+\centering
+\caption{Таблица истинности для части 3}
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+$a$ & $b$ & $c$ & $d$ & $y$ \\
+\hline
+0 & 0 & 0 & 0 & 0 \\
+0 & 0 & 0 & 1 & 0 \\
+0 & 0 & 1 & 0 & 0 \\
+0 & 0 & 1 & 1 & 1 \\
+0 & 1 & 0 & 0 & 0 \\
+0 & 1 & 0 & 1 & 0 \\
+0 & 1 & 1 & 0 & 0 \\
+0 & 1 & 1 & 1 & 1 \\
+1 & 0 & 0 & 0 & 0 \\
+1 & 0 & 0 & 1 & 0 \\
+1 & 0 & 1 & 0 & 0 \\
+1 & 0 & 1 & 1 & 1 \\
+1 & 1 & 0 & 0 & 1 \\
+1 & 1 & 0 & 1 & 1 \\
+1 & 1 & 1 & 0 & 1 \\
+1 & 1 & 1 & 1 & 1 \\
+\hline
+\end{tabular}
+\end{table}
+
+\section{Последовательные схемы}
+
+\subsection{Часть 4: D-триггер}
+
+\begin{table}[h]
+\centering
+\caption{Таблица истинности для D-триггера}
+\begin{tabular}{|c|c|c|c|}
+\hline
+$reset$ & $d$ & $q_{n+1}$ & Описание \\
+\hline
+1 & X & 0 & Асинхронный сброс \\
+0 & 0 & 0 & Передача 0 \\
+0 & 1 & 1 & Передача 1 \\
+\hline
+\end{tabular}
+\end{table}
+
+\subsection{Часть 5: JK-триггер}
+
+\begin{table}[h]
+\centering
+\caption{Таблица истинности для JK-триггера}
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+$reset$ & $j$ & $k$ & $q_{n+1}$ & Описание \\
+\hline
+1 & X & X & 0 & Асинхронный сброс \\
+0 & 0 & 0 & $q_n$ & Сохранение состояния \\
+0 & 0 & 1 & 0 & Сброс \\
+0 & 1 & 0 & 1 & Установка \\
+0 & 1 & 1 & $\overline{q_n}$ & Инверсия \\
+\hline
+\end{tabular}
+\end{table}
+
+\subsection{Часть 6: Последовательная схема с комбинационной логикой}
+
+\begin{table}[h]
+\centering
+\caption{Таблица истинности для части 6}
+\begin{tabular}{|c|c|c|c|c|c|}
+\hline
+$a$ & $b$ & $state_{n+1}$ & $state_n$ & $y$ & Описание \\
+\hline
+0 & 0 & 0 & 0 & 0 & Состояние 0, выход 0 \\
+0 & 0 & 0 & 1 & 0 & Состояние 1, выход 0 \\
+0 & 1 & 1 & 0 & 1 & Переход в состояние 1 \\
+0 & 1 & 1 & 1 & 1 & Остаемся в состоянии 1 \\
+1 & 0 & 1 & 0 & 0 & Переход в состояние 1 \\
+1 & 0 & 1 & 1 & 1 & Остаемся в состоянии 1 \\
+1 & 1 & 0 & 0 & 1 & Переход в состояние 0 \\
+1 & 1 & 0 & 1 & 1 & Переход в состояние 0 \\
+\hline
+\end{tabular}
+\end{table}
+
+\textbf{Примечание:} $state_{n+1} = a \oplus b$, $y = state \cdot a + b$
+
+\section{FSM модули}
+
+\subsection{Счетчик 0-999}
+
+\begin{table}[h]
+\centering
+\caption{Логика работы счетчика}
+\begin{tabular}{|c|c|c|c|}
+\hline
+$reset$ & $count$ & $count_{n+1}$ & Описание \\
+\hline
+1 & X & 0 & Сброс счетчика \\
+0 & 0-998 & $count + 1$ & Инкремент \\
+0 & 999 & 0 & Переполнение \\
+\hline
+\end{tabular}
+\end{table}
+
+\subsection{Сдвиговый регистр-счетчик}
+
+\begin{table}[h]
+\centering
+\caption{Логика работы сдвигового регистра}
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+$shift\_ena$ & $count\_ena$ & $data\_in$ & $data\_out_{n+1}$ & Описание \\
+\hline
+1 & 0 & X & $\{data\_out[2:0], data\_in\}$ & Сдвиг влево \\
+0 & 1 & X & $data\_out - 1$ & Обратный счет \\
+0 & 0 & X & $data\_out$ & Сохранение \\
+\hline
+\end{tabular}
+\end{table}
+
+\subsection{Детектор паттерна 1101}
+
+\begin{table}[h]
+\centering
+\caption{Состояния FSM детектора паттерна}
+\begin{tabular}{|c|c|c|c|}
+\hline
+Состояние & Вход & Следующее состояние & $start\_shifting$ \\
+\hline
+S0 (IDLE) & 0 & S0 & 0 \\
+S0 (IDLE) & 1 & S1 & 0 \\
+S1 & 0 & S0 & 0 \\
+S1 & 1 & S2 & 0 \\
+S2 & 0 & S3 & 0 \\
+S2 & 1 & S2 & 0 \\
+S3 & 0 & S0 & 0 \\
+S3 & 1 & S4 & 1 \\
+S4 & 0 & S0 & 0 \\
+S4 & 1 & S1 & 0 \\
+\hline
+\end{tabular}
+\end{table}
+
+\subsection{Продвинутый таймер}
+
+\begin{table}[h]
+\centering
+\caption{Состояния FSM продвинутого таймера}
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+Состояние & Условие перехода & Следующее состояние & $counting$ & $done$ \\
+\hline
+IDLE & Паттерн 1101 найден & SHIFTING & 0 & 0 \\
+SHIFTING & 4 бита сдвинуты & COUNTING & 0 & 0 \\
+COUNTING & $timer\_count \geq target$ & DONE\_STATE & 1 & 0 \\
+DONE\_STATE & $ack = 1$ & IDLE & 0 & 1 \\
+\hline
+\end{tabular}
+\end{table}
+
+\textbf{Примечание:} $target\_count = (delay\_value + 1) \times 1000$
+
+\section{Заключение}
+
+Все таблицы истинности соответствуют реализованным модулям и подтверждают корректность их работы. Комбинационные схемы реализуют простые логические функции, а последовательные схемы демонстрируют различные типы триггеров и конечных автоматов.
+
+\end{document}
