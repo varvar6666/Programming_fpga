@@ -38,7 +38,7 @@ module FSM_part_4_tb;
         #20160 data <= 1;
         #20 data <= 0;
         #10 data <= 1;
-        #10 data <= 0;
+        #40 data <= 0;
     end
     initial begin   
         $dumpfile("out/FSM_part_4_tb.vcd");       // create a VCD waveform dump called "wave.vcd"
