@@ -20,78 +20,28 @@
 
 \section{Комбинационные схемы}
 
-\subsection{Часть 1: Логическая функция $y = c$}
+\subsection{Часть 1: Логическая функция $q = (a | b) \& (c | d)$}
 
 \begin{table}[h]
 \centering
 \caption{Таблица истинности для части 1}
-\begin{tabular}{|c|c|c|c|}
-\hline
-$a$ & $b$ & $c$ & $y$ \\
-\hline
-0 & 0 & 0 & 0 \\
-0 & 0 & 1 & 1 \\
-0 & 1 & 0 & 0 \\
-0 & 1 & 1 & 1 \\
-1 & 0 & 0 & 0 \\
-1 & 0 & 1 & 1 \\
-1 & 1 & 0 & 0 \\
-1 & 1 & 1 & 1 \\
-\hline
-\end{tabular}
-\end{table}
-
-\subsection{Часть 2: Функция исключающего ИЛИ $y = a \oplus b \oplus c \oplus d$}
-
-\begin{table}[h]
-\centering
-\caption{Таблица истинности для части 2}
 \begin{tabular}{|c|c|c|c|c|}
 \hline
-$a$ & $b$ & $c$ & $d$ & $y$ \\
-\hline
-0 & 0 & 0 & 0 & 0 \\
-0 & 0 & 0 & 1 & 1 \\
-0 & 0 & 1 & 0 & 1 \\
-0 & 0 & 1 & 1 & 0 \\
-0 & 1 & 0 & 0 & 1 \\
-0 & 1 & 0 & 1 & 0 \\
-0 & 1 & 1 & 0 & 0 \\
-0 & 1 & 1 & 1 & 1 \\
-1 & 0 & 0 & 0 & 1 \\
-1 & 0 & 0 & 1 & 0 \\
-1 & 0 & 1 & 0 & 0 \\
-1 & 0 & 1 & 1 & 1 \\
-1 & 1 & 0 & 0 & 0 \\
-1 & 1 & 0 & 1 & 1 \\
-1 & 1 & 1 & 0 & 1 \\
-1 & 1 & 1 & 1 & 0 \\
-\hline
-\end{tabular}
-\end{table}
-
-\subsection{Часть 3: Логическая функция $y = (a \cdot b) + (c \cdot d)$}
-
-\begin{table}[h]
-\centering
-\caption{Таблица истинности для части 3}
-\begin{tabular}{|c|c|c|c|c|}
-\hline
-$a$ & $b$ & $c$ & $d$ & $y$ \\
+$a$ & $b$ & $c$ & $d$ & $q$ \\
 \hline
 0 & 0 & 0 & 0 & 0 \\
 0 & 0 & 0 & 1 & 0 \\
 0 & 0 & 1 & 0 & 0 \\
-0 & 0 & 1 & 1 & 1 \\
+0 & 0 & 1 & 1 & 0 \\
 0 & 1 & 0 & 0 & 0 \\
-0 & 1 & 0 & 1 & 0 \\
-0 & 1 & 1 & 0 & 0 \\
+0 & 1 & 0 & 1 & 1 \\
+0 & 1 & 1 & 0 & 1 \\
 0 & 1 & 1 & 1 & 1 \\
 1 & 0 & 0 & 0 & 0 \\
-1 & 0 & 0 & 1 & 0 \\
-1 & 0 & 1 & 0 & 0 \\
+1 & 0 & 0 & 1 & 1 \\
+1 & 0 & 1 & 0 & 1 \\
 1 & 0 & 1 & 1 & 1 \\
-1 & 1 & 0 & 0 & 1 \\
+1 & 1 & 0 & 0 & 0 \\
 1 & 1 & 0 & 1 & 1 \\
 1 & 1 & 1 & 0 & 1 \\
 1 & 1 & 1 & 1 & 1 \\
@@ -99,100 +49,142 @@ $a$ & $b$ & $c$ & $d$ & $y$ \\
 \end{tabular}
 \end{table}
 
-\section{Последовательные схемы}
-
-\subsection{Часть 4: D-триггер}
+\subsection{Часть 2: Логическая функция $q = b | c$}
 
 \begin{table}[h]
 \centering
-\caption{Таблица истинности для D-триггера}
-\begin{tabular}{|c|c|c|c|}
-\hline
-$reset$ & $d$ & $q_{n+1}$ & Описание \\
-\hline
-1 & X & 0 & Асинхронный сброс \\
-0 & 0 & 0 & Передача 0 \\
-0 & 1 & 1 & Передача 1 \\
-\hline
-\end{tabular}
-\end{table}
-
-\subsection{Часть 5: JK-триггер}
-
-\begin{table}[h]
-\centering
-\caption{Таблица истинности для JK-триггера}
+\caption{Таблица истинности для части 2}
 \begin{tabular}{|c|c|c|c|c|}
 \hline
-$reset$ & $j$ & $k$ & $q_{n+1}$ & Описание \\
+$a$ & $b$ & $c$ & $d$ & $q$ \\
 \hline
-1 & X & X & 0 & Асинхронный сброс \\
-0 & 0 & 0 & $q_n$ & Сохранение состояния \\
-0 & 0 & 1 & 0 & Сброс \\
-0 & 1 & 0 & 1 & Установка \\
-0 & 1 & 1 & $\overline{q_n}$ & Инверсия \\
+X & 0 & 0 & X & 0 \\
+X & 0 & 1 & X & 1 \\
+X & 1 & 0 & X & 1 \\
+X & 1 & 1 & X & 1 \\
 \hline
 \end{tabular}
 \end{table}
 
-\subsection{Часть 6: Последовательная схема с комбинационной логикой}
+\textbf{Примечание:} Выход $q$ зависит только от входов $b$ и $c$, входы $a$ и $d$ не влияют на результат.
+
+\subsection{Часть 3: Мультиплексор 4x1}
 
 \begin{table}[h]
 \centering
-\caption{Таблица истинности для части 6}
+\caption{Таблица истинности для части 3}
 \begin{tabular}{|c|c|c|c|c|c|}
 \hline
-$a$ & $b$ & $state_{n+1}$ & $state_n$ & $y$ & Описание \\
+$a[3:0]$ & $b[3:0]$ & $c[3:0]$ & $d[3:0]$ & $e[3:0]$ & $q[3:0]$ \\
 \hline
-0 & 0 & 0 & 0 & 0 & Состояние 0, выход 0 \\
-0 & 0 & 0 & 1 & 0 & Состояние 1, выход 0 \\
-0 & 1 & 1 & 0 & 1 & Переход в состояние 1 \\
-0 & 1 & 1 & 1 & 1 & Остаемся в состоянии 1 \\
-1 & 0 & 1 & 0 & 0 & Переход в состояние 1 \\
-1 & 0 & 1 & 1 & 1 & Остаемся в состоянии 1 \\
-1 & 1 & 0 & 0 & 1 & Переход в состояние 0 \\
-1 & 1 & 0 & 1 & 1 & Переход в состояние 0 \\
+X & X & 0 & X & X & $b$ \\
+X & X & 1 & X & X & $e$ \\
+X & X & 2 & X & X & $a$ \\
+X & X & 3 & X & X & $d$ \\
+X & X & 4-15 & X & X & $F$ \\
 \hline
 \end{tabular}
 \end{table}
 
-\textbf{Примечание:} $state_{n+1} = a \oplus b$, $y = state \cdot a + b$
+\textbf{Примечание:} Мультиплексор выбирает один из четырех входов по управляющему сигналу $c$. При неопределенных значениях $c$ выход устанавливается в $F$.
+
+\section{Последовательные схемы}
+
+\subsection{Часть 4: Логика на основе тактового сигнала}
+
+\begin{table}[h]
+\centering
+\caption{Логика работы модуля Part 4}
+\begin{tabular}{|c|c|c|c|}
+\hline
+$clock$ & $a$ & $p$ & $q$ \\
+\hline
+0 & 0 & $p_{prev}$ & $q_{prev}$ \\
+0 & 1 & $p_{prev}$ & $q_{prev}$ \\
+1 & 0 & 0 & $p$ \\
+1 & 1 & 1 & $p$ \\
+\hline
+\end{tabular}
+\end{table}
+
+\textbf{Примечание:} $p$ обновляется по положительному фронту $clock$, $q$ обновляется по отрицательному фронту $clock$.
+
+\subsection{Часть 5: Счетчик с остановкой}
+
+\begin{table}[h]
+\centering
+\caption{Логика работы счетчика Part 5}
+\begin{tabular}{|c|c|c|c|}
+\hline
+$a$ & $q_{current}$ & $q_{next}$ & Описание \\
+\hline
+0 & 0-5 & $q + 1$ & Обычный счет \\
+0 & 6 & 0 & Переполнение \\
+1 & X & 4 & Принудительная остановка на 4 \\
+\hline
+\end{tabular}
+\end{table}
+
+\textbf{Примечание:} Счетчик считает от 0 до 6, при $a=1$ устанавливается значение 4.
+
+\subsection{Часть 6: XOR логика с состоянием}
+
+\begin{table}[h]
+\centering
+\caption{Логика работы модуля Part 6}
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+$a$ & $b$ & $state_{current}$ & $state_{next}$ & $q$ \\
+\hline
+0 & 0 & 0 & $a$ & $a \oplus b \oplus state$ \\
+0 & 0 & 1 & $a$ & $a \oplus b \oplus state$ \\
+0 & 1 & 0 & $state$ & $a \oplus b \oplus state$ \\
+0 & 1 & 1 & $state$ & $a \oplus b \oplus state$ \\
+1 & 0 & 0 & $state$ & $a \oplus b \oplus state$ \\
+1 & 0 & 1 & $state$ & $a \oplus b \oplus state$ \\
+1 & 1 & 0 & $a$ & $a \oplus b \oplus state$ \\
+1 & 1 & 1 & $a$ & $a \oplus b \oplus state$ \\
+\hline
+\end{tabular}
+\end{table}
+
+\textbf{Примечание:} $state_{n+1} = (a == b) ? a : state$, $q = a \oplus b \oplus state$
 
 \section{FSM модули}
 
-\subsection{Счетчик 0-999}
+\subsection{FSM Part 1: Счетчик 0-999}
 
 \begin{table}[h]
 \centering
 \caption{Логика работы счетчика}
 \begin{tabular}{|c|c|c|c|}
 \hline
-$reset$ & $count$ & $count_{n+1}$ & Описание \\
+$reset$ & $q$ & $q_{n+1}$ & Описание \\
 \hline
 1 & X & 0 & Сброс счетчика \\
-0 & 0-998 & $count + 1$ & Инкремент \\
+0 & 0-998 & $q + 1$ & Инкремент \\
 0 & 999 & 0 & Переполнение \\
 \hline
 \end{tabular}
 \end{table}
 
-\subsection{Сдвиговый регистр-счетчик}
+\subsection{FSM Part 2: Сдвиговый регистр-счетчик}
 
 \begin{table}[h]
 \centering
 \caption{Логика работы сдвигового регистра}
 \begin{tabular}{|c|c|c|c|c|}
 \hline
-$shift\_ena$ & $count\_ena$ & $data\_in$ & $data\_out_{n+1}$ & Описание \\
+$shift\_ena$ & $count\_ena$ & $data$ & $q_{n+1}$ & Описание \\
 \hline
-1 & 0 & X & $\{data\_out[2:0], data\_in\}$ & Сдвиг влево \\
-0 & 1 & X & $data\_out - 1$ & Обратный счет \\
-0 & 0 & X & $data\_out$ & Сохранение \\
+1 & 0 & X & $\{q[2:0], data\}$ & Сдвиг влево \\
+0 & 1 & X & $q - 1$ (если $q \neq 0$) & Обратный счет \\
+0 & 0 & X & $q$ & Сохранение \\
 \hline
 \end{tabular}
 \end{table}
 
-\subsection{Детектор паттерна 1101}
+\subsection{FSM Part 3: Детектор паттерна 1101}
 
 \begin{table}[h]
 \centering
@@ -215,7 +207,7 @@ S4 & 1 & S1 & 0 \\
 \end{tabular}
 \end{table}
 
-\subsection{Продвинутый таймер}
+\subsection{FSM Part 4: Продвинутый таймер}
 
 \begin{table}[h]
 \centering
@@ -224,18 +216,18 @@ S4 & 1 & S1 & 0 \\
 \hline
 Состояние & Условие перехода & Следующее состояние & $counting$ & $done$ \\
 \hline
-IDLE & Паттерн 1101 найден & SHIFTING & 0 & 0 \\
-SHIFTING & 4 бита сдвинуты & COUNTING & 0 & 0 \\
-COUNTING & $timer\_count \geq target$ & DONE\_STATE & 1 & 0 \\
-DONE\_STATE & $ack = 1$ & IDLE & 0 & 1 \\
+S0-S3 & Паттерн 1101 найден & B0 & 0 & 0 \\
+B0-B3 & 4 бита сдвинуты & COUNT & 0 & 0 \\
+COUNT & $num\_cnt \geq target$ & WAIT & 1 & 0 \\
+WAIT & $ack = 1$ & S0 & 0 & 1 \\
 \hline
 \end{tabular}
 \end{table}
 
-\textbf{Примечание:} $target\_count = (delay\_value + 1) \times 1000$
+\textbf{Примечание:} $target\_count = (cnt + 1) \times 1000$, где $cnt$ - значение сдвигового регистра.
 
 \section{Заключение}
 
-Все таблицы истинности соответствуют реализованным модулям и подтверждают корректность их работы. Комбинационные схемы реализуют простые логические функции, а последовательные схемы демонстрируют различные типы триггеров и конечных автоматов.
+Все таблицы истинности соответствуют реализованным модулям и подтверждают корректность их работы. Комбинационные схемы реализуют различные логические функции, а последовательные схемы демонстрируют работу с тактовыми сигналами и внутренними состояниями. FSM модули показывают сложную логику конечных автоматов с множественными состояниями и переходами.
 
 \end{document}
