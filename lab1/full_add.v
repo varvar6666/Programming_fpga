@@ -9,4 +9,5 @@ module full_add (
     // Расчет переноса: если хотя бы два из трех входов равны 1
     assign cout = (a & b) | (a & cin) | (b & cin);
 
+
 endmodule

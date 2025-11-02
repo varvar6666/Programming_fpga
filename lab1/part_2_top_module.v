@@ -21,4 +21,5 @@ module part_2_top_module (input [7:0] d, input [1:0] sel, input clk, output reg 
         endcase
     end
 
+
 endmodule

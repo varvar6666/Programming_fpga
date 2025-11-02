@@ -35,4 +35,5 @@ module add16(
     
     // Используем встроенный оператор сложения Verilog
     assign {cout, sum} = a + b + cin;
+
 endmodule
