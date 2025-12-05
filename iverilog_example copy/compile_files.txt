@@ -1,3 +1,0 @@
-gw_prj/src/top.v
-gw_prj/src/gowin_rpll/gowin_rpll.v
-gw_prj/src/integer_multiplier/integer_multiplier.vo

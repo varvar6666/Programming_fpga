@@ -8,7 +8,6 @@ module top (
 	output [15:0] multi_soft_o
 );
 
-
 	Gowin_rPLL pll_100_1(
 		.clkout(clk_100m_o), //output clkout
 		.lock(lock_o), //output lock
